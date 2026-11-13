@@ -31,6 +31,11 @@
 
 5. [Fabric AI Functions and Azure OpenAI](#5-fabric-ai-functions-and-azure-openai)
 
+   - [5.1 Fabric AI Functions: Overview and Setup](#51-fabric-ai-functions-overview-and-setup)
+   - [5.2 Use and Customize AI Functions in Notebooks](#52-use-and-customize-ai-functions-in-notebooks)
+   - [5.3 Use AI Functions in Fabric Data Warehouse](#53-use-ai-functions-in-fabric-data-warehouse)
+   - [5.4 Integrate Azure OpenAI in Fabric Notebooks](#54-integrate-azure-openai-in-fabric-notebooks)
+
 6. [Fabric IQ and Ontology](#6-fabric-iq-and-ontology)
 
 7. [Fabric Data Agents](#7-fabric-data-agents)
@@ -219,15 +224,29 @@ The following links cover related Azure AI services and Fabric workflows; they a
 
 ## 5. Fabric AI Functions and Azure OpenAI
 
+**Teaching note:** Start with the shared AI Functions concepts and prerequisites. Then explore notebook-based use and configuration, followed by the separate SQL experience in Fabric Data Warehouse. Finish with direct Azure OpenAI integrations in notebooks. Distinguish Fabric AI Functions, which provide managed functions for data transformation, from calling Azure OpenAI through SynapseML or the OpenAI Python SDK; these approaches have different setup, configuration, and endpoint requirements.
+
+### 5.1 Fabric AI Functions: Overview and Setup
+
 - **Fabric AI Functions** — [AI Functions: Transform data at scale with AI](https://learn.microsoft.com/en-us/fabric/data-science/ai-functions/overview?tabs=pandas) — **Practical code guide:** setup instructions and examples for using AI functions across Fabric, with the pandas tab selected. Requires an enabled Fabric tenant setting and paid Fabric capacity.
 
-- **AI Functions in Fabric Data Warehouse** — [AI Functions in a warehouse or SQL analytics endpoint](https://learn.microsoft.com/fabric/data-warehouse/ai-functions) — **Practical SQL guide:** demonstrates text analysis and transformation with T-SQL examples. The feature is in preview and requires supported Fabric capacity and tenant settings.
+### 5.2 Use and Customize AI Functions in Notebooks
 
 - **AI Functions with Python and PySpark** — [Apply AI Functions in pandas and PySpark](https://learn.microsoft.com/fabric/data-science/ai-functions/overview#apply-ai-functions) — **Practical code examples:** jumps to pandas and PySpark examples in the AI Functions guide; follow along in a Fabric notebook.
 
 - **Customize AI Functions with PySpark** — [Customize AI Functions with PySpark](https://learn.microsoft.com/en-us/fabric/data-science/ai-functions/pyspark/configuration?tabs=llm-global-pyspark%2Cembedding-global-pyspark%2Cfoundry-openai-pyspark) — **Practical configuration guide:** customize model and embedding settings, concurrency, chaining, statistics, and endpoint configuration for PySpark AI Functions.
 
+### 5.3 Use AI Functions in Fabric Data Warehouse
+
+- **AI Functions in Fabric Data Warehouse** — [AI Functions in a warehouse or SQL analytics endpoint](https://learn.microsoft.com/fabric/data-warehouse/ai-functions) — **Practical SQL guide:** demonstrates text analysis and transformation with T-SQL examples. The feature is in preview and requires supported Fabric capacity and tenant settings.
+
+- 🛠️ **Use AI Functions in a Fabric Warehouse** — [Tutorial: Use AI functions in a warehouse](https://learn.microsoft.com/fabric/data-warehouse/tutorial-ai-functions) — **Hands-on tutorial:** run guided T-SQL exercises to extract, generate, summarize, and persist AI results using sample sales data. First complete the setup steps to [create a workspace](https://learn.microsoft.com/fabric/data-warehouse/tutorial-create-workspace), [create a warehouse](https://learn.microsoft.com/fabric/data-warehouse/tutorial-create-warehouse), and [ingest sample data](https://learn.microsoft.com/fabric/data-warehouse/tutorial-ingest-data). Requires a paid Fabric capacity and enabled tenant settings; run the data-changing steps in a test warehouse.
+
+### 5.4 Integrate Azure OpenAI in Fabric Notebooks
+
 - **Azure OpenAI with SynapseML** — [Use Azure OpenAI in Fabric with SynapseML](https://learn.microsoft.com/fabric/data-science/ai-services/how-to-use-openai-synapse-ml) — **Practical code guide:** run PySpark examples for prompts, responses, and embeddings in a Fabric notebook.
+
+- 🛠️ **Use Azure OpenAI for big data with SynapseML** — [Azure OpenAI for big data](https://learn.microsoft.com/fabric/data-science/open-ai) — **Hands-on notebook tutorial:** download and import the provided notebook into Fabric, configure a working Azure OpenAI resource, install SynapseML, then run and adapt Spark examples for prompts and embeddings. Requires an Azure OpenAI resource and a compatible Fabric Spark runtime.
 
 - **Azure OpenAI with the OpenAI Python SDK** — [Use Azure OpenAI in Fabric with the OpenAI Python SDK](https://learn.microsoft.com/fabric/data-science/ai-services/how-to-use-openai-python-sdk) — **Practical code guide:** set up a client and run API examples in a Fabric notebook.
 
