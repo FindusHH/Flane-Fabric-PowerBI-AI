@@ -1,10 +1,11 @@
-# Proposed Agenda
+<sub>Version 1.2.1</sub>
 
-**Course:** Power BI & Fabric AI Advanced
+
+# Course: Power BI & Fabric AI Advanced
 
 **Contents**
 
-1. [Copilot in Power BI: Reports and DAX](#1-copilot-in-power-bi-reports-and-dax)
+1. [**Copilot in Power BI: Reports and DAX**](#1-copilot-in-power-bi-reports-and-dax)
 
    - [1.1 Overview and Orientation](#11-overview-and-orientation)
    - [1.2 Sample Data and Exercise Setup](#12-sample-data-and-exercise-setup)
@@ -13,21 +14,21 @@
    - [1.5 Create and Refine Reports with Copilot](#15-create-and-refine-reports-with-copilot)
    - [1.6 Use Copilot as a Business User (Optional)](#16-use-copilot-as-a-business-user-optional)
 
-2. [Vibe Coding with Power BI and Visual Studio Code](#2-vibe-coding-with-power-bi-and-visual-studio-code)
+2. [Copilot in Fabric: Data Transformation, Spark, and SQL](#2-copilot-in-fabric-data-transformation-spark-and-sql)
 
-   - [2.1 Agentic Power BI Development Workflow](#21-agentic-power-bi-development-workflow)
-   - [2.2 Build Fabric Apps: From Quickstart to GitHub Copilot](#22-build-fabric-apps-from-quickstart-to-github-copilot)
-   - [2.3 Optional Paths: Notebook Authoring and Embedded Analytics](#23-optional-paths-notebook-authoring-and-embedded-analytics)
+   - [2.1 Copilot in Fabric Overview](#21-copilot-in-fabric-overview)
+   - [2.2 Data Preparation and Data Factory Pipelines](#22-data-preparation-and-data-factory-pipelines)
+   - [2.3 Spark Analysis in Fabric Notebooks](#23-spark-analysis-in-fabric-notebooks)
+   - [2.4 SQL Analysis in Fabric Data Warehouse](#24-sql-analysis-in-fabric-data-warehouse)
+   - [2.5 Optional: Real-Time Intelligence](#25-optional-real-time-intelligence)
 
-3. [GenAI-based Report-Commenting](#3-genai-based-report-commenting)
+3. [Vibe Coding with Power BI and Visual Studio Code](#3-vibe-coding-with-power-bi-and-visual-studio-code)
 
-4. [Copilot in Fabric: Data Transformation, Spark, and SQL](#4-copilot-in-fabric-data-transformation-spark-and-sql)
+   - [3.1 Agentic Power BI Development Workflow](#31-agentic-power-bi-development-workflow)
+   - [3.2 Build Fabric Apps: From Quickstart to GitHub Copilot](#32-build-fabric-apps-from-quickstart-to-github-copilot)
+   - [3.3 Optional Paths: Notebook Authoring and Embedded Analytics](#33-optional-paths-notebook-authoring-and-embedded-analytics)
 
-   - [4.1 Copilot in Fabric Overview](#41-copilot-in-fabric-overview)
-   - [4.2 Data Preparation and Data Factory Pipelines](#42-data-preparation-and-data-factory-pipelines)
-   - [4.3 Spark Analysis in Fabric Notebooks](#43-spark-analysis-in-fabric-notebooks)
-   - [4.4 SQL Analysis in Fabric Data Warehouse](#44-sql-analysis-in-fabric-data-warehouse)
-   - [4.5 Optional: Real-Time Intelligence](#45-optional-real-time-intelligence)
+4. [GenAI-based Report-Commenting](#4-genai-based-report-commenting)
 
 5. [Fabric AI Functions and Azure OpenAI](#5-fabric-ai-functions-and-azure-openai)
 
@@ -108,15 +109,47 @@
 
 [Back to top](#proposed-agenda)
 
-## 2. Vibe Coding with Power BI and Visual Studio Code
+## 2. Copilot in Fabric: Data Transformation, Spark, and SQL
+
+**Teaching note:** Begin with an overview of Copilot across Fabric, then explore data preparation, notebook-based Spark analysis, and SQL analysis in a warehouse. The three labs are separate exercises with their own datasets and setup; they are not a single end-to-end pipeline. The Data Factory pipelines guide covers a related workload, while Real-Time Intelligence is an optional extension.
+
+### 2.1 Copilot in Fabric Overview
+
+- **Copilot in Fabric overview** — [What is Copilot in Fabric?](https://learn.microsoft.com/fabric/fundamentals/copilot-fabric-overview) — **Overview/reference:** introduces Copilot across Fabric workloads.
+
+### 2.2 Data Preparation and Data Factory Pipelines
+
+- 🛠️ **Copilot in Dataflow Gen2** — [Work smarter with Copilot in Microsoft Fabric Dataflow Gen2](https://microsoftlearning.github.io/mslearn-fabric/Instructions/Labs/22a-copilot-fabric-dataflow-gen2.html) — **Hands-on lab (approximately 30 minutes):** clean retail store data, parse XML, create categorical groups, and set data types using natural language prompts. Publish the results to a lakehouse. Requires paid Fabric capacity; trial capacity is not supported.
+
+- **Copilot in Data Factory pipelines** — [Get started with Copilot in Fabric in the Data Factory workload](https://learn.microsoft.com/fabric/data-factory/copilot-fabric-data-factory-get-started) — **Getting-started guide:** covers Copilot in the Data Factory workload, including pipelines; distinct from the Dataflow Gen2 lab.
+
+### 2.3 Spark Analysis in Fabric Notebooks
+
+- **Copilot in Data Engineering and Data Science** — [Overview of Copilot for Data Engineering and Data Science](https://learn.microsoft.com/fabric/data-engineering/copilot-notebooks-overview) · [Use the Copilot chat pane in notebooks](https://learn.microsoft.com/fabric/data-engineering/copilot-notebooks-chat-pane) — **Overview and feature guide:** introduce notebook Copilot and its chat pane.
+
+- 🛠️ **Copilot in Fabric notebooks** — [Analyze data with Apache Spark and Copilot in Microsoft Fabric notebooks](https://microsoftlearning.github.io/mslearn-fabric/Instructions/Labs/22b-copilot-fabric-notebooks.html) — **Hands-on lab (approximately 30 minutes):** generate Spark code to clean, filter, and reshape population data, save it to a lakehouse, and visualize the results. Requires paid Fabric capacity; trial capacity is not supported.
+
+### 2.4 SQL Analysis in Fabric Data Warehouse
+
+- **Data Warehouse Copilot chat pane** — [How to use the Copilot chat pane in Fabric Data Warehouse](https://learn.microsoft.com/fabric/data-warehouse/copilot-chat-pane) — **Feature guide:** use the warehouse Copilot chat experience.
+
+- 🛠️ **Copilot in Fabric Data Warehouse** — [Use Copilot in Microsoft Fabric data warehouse](https://microsoftlearning.github.io/mslearn-fabric/Instructions/Labs/22c-copilot-fabric-data-warehouse.html) — **Hands-on lab (approximately 30 minutes):** use retail sales data to generate and refine SQL queries, fix syntax errors, and create reusable views with Copilot. Requires paid Fabric capacity; trial capacity is not supported.
+
+### 2.5 Optional: Real-Time Intelligence
+
+- **Copilot in Real-Time Intelligence** — [Copilot for Real-Time Intelligence](https://learn.microsoft.com/fabric/real-time-intelligence/copilot-real-time-intelligence) · [Generate Real-Time dashboards with Copilot](https://learn.microsoft.com/fabric/real-time-intelligence/copilot-generate-dashboard) — **Overview and how-to:** use Copilot for Real-Time Intelligence, including KQL scenarios and dashboard generation.
+
+[Back to top](#proposed-agenda)
+
+## 3. Vibe Coding with Power BI and Visual Studio Code
 
 **Teaching note:** Start with the agentic Power BI workflow to establish development concepts, validation, and deployment practices. Then follow the separate Fabric app track: scaffold a first app before building a Copilot-assisted app connected to a semantic model. The app exercises build applications, not PBIR reports. Notebook authoring and Power BI Embedded are optional related paths, not prerequisites for the app exercises.
 
-### 2.1 Agentic Power BI Development Workflow
+### 3.1 Agentic Power BI Development Workflow
 
 - **Agentic Power BI development on Windows** — [Vibe Coding with Power BI on Windows](./06-vibe-coding-power-bi-windows.en.md) — **Training material:** covers VS Code, PBIP, TMDL, PBIR, agentic workflows, validation, and deployment, including alternatives when MCP is prohibited.
 
-### 2.2 Build Fabric Apps: From Quickstart to GitHub Copilot
+### 3.2 Build Fabric Apps: From Quickstart to GitHub Copilot
 
 - **Rayfin** — [Rayfin](https://rayfin.ai/) — **External product website:** related reference for the Rayfin-based Fabric apps workflow below; not a guided exercise. The website could not be retrieved during this review.
 
@@ -126,7 +159,7 @@
 
 - 🛠️ **Create a semantic model app with GitHub Copilot** — [Create a semantic model app with GitHub Copilot](https://learn.microsoft.com/en-us/fabric/apps/create-app-with-github-copilot) — **Hands-on tutorial:** use GitHub Copilot agent mode in VS Code to scaffold an analytical app, connect a Fabric semantic model, generate DAX and visualizations, validate changes, and deploy to Fabric. This builds an app connected to a semantic model rather than a PBIR report.
 
-### 2.3 Optional Paths: Notebook Authoring and Embedded Analytics
+### 3.3 Optional Paths: Notebook Authoring and Embedded Analytics
 
 - **Fabric notebooks in VS Code** — [Create and manage Fabric notebooks in VS Code](https://learn.microsoft.com/en-us/fabric/data-engineering/author-notebook-with-vs-code) — **Practical how-to:** use the Fabric Data Engineering extension to create, edit, synchronize, and run notebooks from VS Code.
 
@@ -134,7 +167,7 @@
 
 [Back to top](#proposed-agenda)
 
-## 3. GenAI-based Report-Commenting
+## 4. GenAI-based Report-Commenting
 
 This topic covers AI-generated Power BI narratives and Azure Content Understanding for extracting and validating information from source content. The Content Understanding exercises do not themselves build a Power BI report-commenting solution; integrating their output into reports is a separate task.
 
@@ -187,38 +220,6 @@ The following links cover related Azure AI services and Fabric workflows; they a
 - **Azure AI Language text analytics** — [Use Azure AI Language text analytics in Fabric with SynapseML](https://learn.microsoft.com/fabric/data-science/ai-services/how-to-use-text-analytics) — **Practical code guide:** apply text analytics in Fabric; relevant to text and transcript analysis.
 
 - **Content Safety and Responsible AI** — [What is Azure AI Content Safety?](https://learn.microsoft.com/azure/ai-services/content-safety/overview) — **Overview/reference:** introduces Azure AI Content Safety. This is a conceptual Azure reference, not a Fabric-native hands-on exercise.
-
-[Back to top](#proposed-agenda)
-
-## 4. Copilot in Fabric: Data Transformation, Spark, and SQL
-
-**Teaching note:** Begin with an overview of Copilot across Fabric, then explore data preparation, notebook-based Spark analysis, and SQL analysis in a warehouse. The three labs are separate exercises with their own datasets and setup; they are not a single end-to-end pipeline. The Data Factory pipelines guide covers a related workload, while Real-Time Intelligence is an optional extension.
-
-### 4.1 Copilot in Fabric Overview
-
-- **Copilot in Fabric overview** — [What is Copilot in Fabric?](https://learn.microsoft.com/fabric/fundamentals/copilot-fabric-overview) — **Overview/reference:** introduces Copilot across Fabric workloads.
-
-### 4.2 Data Preparation and Data Factory Pipelines
-
-- 🛠️ **Copilot in Dataflow Gen2** — [Work smarter with Copilot in Microsoft Fabric Dataflow Gen2](https://microsoftlearning.github.io/mslearn-fabric/Instructions/Labs/22a-copilot-fabric-dataflow-gen2.html) — **Hands-on lab (approximately 30 minutes):** clean retail store data, parse XML, create categorical groups, and set data types using natural language prompts. Publish the results to a lakehouse. Requires paid Fabric capacity; trial capacity is not supported.
-
-- **Copilot in Data Factory pipelines** — [Get started with Copilot in Fabric in the Data Factory workload](https://learn.microsoft.com/fabric/data-factory/copilot-fabric-data-factory-get-started) — **Getting-started guide:** covers Copilot in the Data Factory workload, including pipelines; distinct from the Dataflow Gen2 lab.
-
-### 4.3 Spark Analysis in Fabric Notebooks
-
-- **Copilot in Data Engineering and Data Science** — [Overview of Copilot for Data Engineering and Data Science](https://learn.microsoft.com/fabric/data-engineering/copilot-notebooks-overview) · [Use the Copilot chat pane in notebooks](https://learn.microsoft.com/fabric/data-engineering/copilot-notebooks-chat-pane) — **Overview and feature guide:** introduce notebook Copilot and its chat pane.
-
-- 🛠️ **Copilot in Fabric notebooks** — [Analyze data with Apache Spark and Copilot in Microsoft Fabric notebooks](https://microsoftlearning.github.io/mslearn-fabric/Instructions/Labs/22b-copilot-fabric-notebooks.html) — **Hands-on lab (approximately 30 minutes):** generate Spark code to clean, filter, and reshape population data, save it to a lakehouse, and visualize the results. Requires paid Fabric capacity; trial capacity is not supported.
-
-### 4.4 SQL Analysis in Fabric Data Warehouse
-
-- **Data Warehouse Copilot chat pane** — [How to use the Copilot chat pane in Fabric Data Warehouse](https://learn.microsoft.com/fabric/data-warehouse/copilot-chat-pane) — **Feature guide:** use the warehouse Copilot chat experience.
-
-- 🛠️ **Copilot in Fabric Data Warehouse** — [Use Copilot in Microsoft Fabric data warehouse](https://microsoftlearning.github.io/mslearn-fabric/Instructions/Labs/22c-copilot-fabric-data-warehouse.html) — **Hands-on lab (approximately 30 minutes):** use retail sales data to generate and refine SQL queries, fix syntax errors, and create reusable views with Copilot. Requires paid Fabric capacity; trial capacity is not supported.
-
-### 4.5 Optional: Real-Time Intelligence
-
-- **Copilot in Real-Time Intelligence** — [Copilot for Real-Time Intelligence](https://learn.microsoft.com/fabric/real-time-intelligence/copilot-real-time-intelligence) · [Generate Real-Time dashboards with Copilot](https://learn.microsoft.com/fabric/real-time-intelligence/copilot-generate-dashboard) — **Overview and how-to:** use Copilot for Real-Time Intelligence, including KQL scenarios and dashboard generation.
 
 [Back to top](#proposed-agenda)
 
