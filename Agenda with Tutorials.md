@@ -1,4 +1,4 @@
-<sub>Version 1.2.1</sub>
+<sub>Version 1.2.2</sub>
 
 <a id="proposed-agenda"></a>
 
@@ -236,6 +236,12 @@ The following links cover related Azure AI services and Fabric workflows; they a
 
 - **AI Functions with Python and PySpark** — [Apply AI Functions in pandas and PySpark](https://learn.microsoft.com/fabric/data-science/ai-functions/overview#apply-ai-functions) — **Practical code examples:** jumps to pandas and PySpark examples in the AI Functions guide; follow along in a Fabric notebook.
 
+- 🛠️ **Get started with AI Functions in PySpark** — [PySpark AI Functions starter notebook](https://github.com/microsoft/fabric-samples/blob/main/docs-samples/data-science/ai-functions/starter-notebooks/AIFunctions-PySpark-starter-notebook.ipynb) — **Hands-on notebook tutorial:** configure and apply AI Functions to a sample of customer reviews, inspect the results, and build a compact dashboard. Requires Fabric Runtime 1.3 or later and the AI Functions prerequisites described above.
+
+- 🛠️ **Get started with AI Functions in pandas** — [Pandas AI Functions starter notebook](https://github.com/microsoft/fabric-samples/blob/main/docs-samples/data-science/ai-functions/starter-notebooks/AIFunctions-pandas-starter-notebook.ipynb) — **Hands-on notebook tutorial:** apply AI Functions to sample customer reviews, inspect the results, and build a compact dashboard. Requires Fabric Runtime 1.3 or later, the AI Functions prerequisites described above, and the notebook's Python package setup.
+
+- **Further AI Functions notebooks** — [AI Functions notebook collection](https://github.com/microsoft/fabric-samples/tree/main/docs-samples/data-science/ai-functions) — **Sample notebook collection:** find links to further PySpark and pandas notebooks, including examples for evaluating sentiment analysis, classification, extraction, grammar correction, summarization, and translation. The collection itself is not a single guided exercise.
+
 - **Customize AI Functions with PySpark** — [Customize AI Functions with PySpark](https://learn.microsoft.com/en-us/fabric/data-science/ai-functions/pyspark/configuration?tabs=llm-global-pyspark%2Cembedding-global-pyspark%2Cfoundry-openai-pyspark) — **Practical configuration guide:** customize model and embedding settings, concurrency, chaining, statistics, and endpoint configuration for PySpark AI Functions.
 
 ### 5.3 Use AI Functions in Fabric Data Warehouse
@@ -309,6 +315,8 @@ The following links cover related Azure AI services and Fabric workflows; they a
 - **Semantic link sample notebooks** — [Semantic link samples](https://github.com/microsoft/fabric-samples/tree/main/docs-samples/data-science/semantic-link-samples) — **Sample notebook collection:** download the notebooks accompanying the semantic link tutorials below; the repository itself is not a step-by-step guide.
 
 - **Use notebooks with a semantic model** — [Use notebooks with a semantic model](https://learn.microsoft.com/power-bi/transform-model/service-notebooks) — **Practical guide:** open ready-made notebooks from a semantic model to run best-practice and memory analysis. Requires suitable workspace access, model permissions, and Fabric capacity.
+
+- 🛠️ **Explore Semantic Link in an all-in-one notebook** — [Semantic Link all-in-one demo](https://github.com/microsoft/fabric-samples/blob/main/features-samples/semantic-link/Semantic%20Link%20all-in-one%20demo.ipynb) — **Hands-on notebook tutorial:** set up the Retail Analysis sample, explore and query its semantic model, evaluate measures, run DAX, and examine data quality. Requires a Fabric workspace; some examples also require a lakehouse.
 
 - 🛠️ **Analyze functional dependencies** — [Analyze functional dependencies in a semantic model](https://learn.microsoft.com/en-us/fabric/data-science/tutorial-power-bi-dependencies) — **Hands-on notebook tutorial:** use SemPy and a sample model to test dependencies between columns and identify data-quality issues.
 
