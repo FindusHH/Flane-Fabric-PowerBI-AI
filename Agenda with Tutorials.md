@@ -1,4 +1,4 @@
-<sub>Version 1.2.3</sub>
+<sub>Version 1.3.1</sub>
 
 <a id="proposed-agenda"></a>
 
@@ -24,8 +24,10 @@
 
 9. [**Semantic Link and Semantic Model Analysis**](./09_Semantic_Link_and_Semantic_Model_Analysis.md)
 
-10. [**Retrieval-Augmented Generation (RAG)**](./10_Retrieval_Augmented_Generation_RAG.md)
+10. [**Fabric Apps with Rayfin**](./10_Fabric_Apps_with_Rayfin.md)
 
-11. [**Customer Use Cases and Proofs of Concept**](./11_Customer_Use_Cases_and_Proofs_of_Concept.md)
+11. [**Retrieval-Augmented Generation (RAG)**](./11_Retrieval_Augmented_Generation_RAG.md)
 
-12. [**General Fabric Samples**](./12_General_Fabric_Samples.md)
+12. [**Customer Use Cases and Proofs of Concept**](./12_Customer_Use_Cases_and_Proofs_of_Concept.md)
+
+13. [**General Fabric Samples**](./13_General_Fabric_Samples.md)
