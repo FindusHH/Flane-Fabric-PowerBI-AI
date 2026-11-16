@@ -21,7 +21,7 @@
 
 - **Copilot for Power BI overview** — [Copilot for Power BI overview](https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-introduction) — **Overview/reference:** introduces Copilot experiences in Power BI.
 
-- **Copilot in Power BI** — [Copilot in Power BI: End-to-End Tutorial](https://learn.microsoft.com/en-us/power-bi/create-reports/tutorial-copilot-power-bi-introduction) — **Overview of a hands-on tutorial series:** introduces a scenario from preparing a semantic model to exploring insights with Copilot; the practical steps are in the subsequent tutorial pages.
+- 🛠️ <strong style="color: #006400; background-color: #FFF59D;">Copilot in Power BI</strong> — [Copilot in Power BI: End-to-End Tutorial](https://learn.microsoft.com/en-us/power-bi/create-reports/tutorial-copilot-power-bi-introduction) — **Hands-on tutorial series overview:** introduces an end-to-end scenario from preparing a semantic model to exploring insights with Copilot; follow the linked tutorial pages for the practical steps.
 
 ## 1.2 Sample Data and Exercise Setup
 
@@ -35,7 +35,7 @@
 
   - **AdventureWorks Sales** — [Download Power BI file (.pbix)](https://github.com/microsoft/powerbi-desktop-samples/raw/main/AdventureWorks%20Sales%20Sample/AdventureWorks%20Sales.pbix) or [Excel workbook (.xlsx)](https://github.com/microsoft/powerbi-desktop-samples/raw/main/AdventureWorks%20Sales%20Sample/AdventureWorks%20Sales.xlsx) — use the prepared report/model or import the source tables for DAX practice. This is an alternative AdventureWorks variant, not the exact model used in the DAX learning unit; check and adapt table names and measures.
 
-- **Artificial Intelligence sample for Power BI** — [Artificial Intelligence sample for Power BI: Take a tour](https://learn.microsoft.com/en-us/power-bi/create-reports/sample-artificial-intelligence) — **Guided sample tour (optional):** explore the Contoso report to investigate revenue contributors, breakdowns, and anomalies. This is a Power BI AI-feature sample, not a Copilot report-generation tutorial. Follow the [sample setup and .pbix download instructions](https://learn.microsoft.com/en-us/power-bi/create-reports/sample-artificial-intelligence#get-the-sample): first add the built-in sample to **My workspace**, then download the report and data from the Power BI service.
+- **Artificial Intelligence sample for Power BI** — [Artificial Intelligence sample for Power BI: Take a tour](https://learn.microsoft.com/en-us/power-bi/create-reports/sample-artificial-intelligence) — **Guided sample tour (optional):** explore the Contoso report to investigate revenue contributors, breakdowns, and anomalies. <span style="color: red;">This is a Power BI AI-feature sample, not a Copilot report-generation tutorial.</span> Follow the [sample setup and .pbix download instructions](https://learn.microsoft.com/en-us/power-bi/create-reports/sample-artificial-intelligence#get-the-sample): first add the built-in sample to **My workspace**, then download the report and data from the Power BI service.
 
 **Copilot access:** Downloading the sample files does not provide Copilot access. The Copilot exercises require suitable capacity, permissions, and enabled settings as described in the linked setup guide.
 
