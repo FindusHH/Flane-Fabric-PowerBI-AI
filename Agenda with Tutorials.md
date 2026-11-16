@@ -1,4 +1,4 @@
-<sub>Version 1.2.2</sub>
+<sub>Version 1.2.3</sub>
 
 <a id="proposed-agenda"></a>
 
@@ -208,7 +208,7 @@
 
 This topic covers AI-generated Power BI narratives and Azure Content Understanding for extracting and validating information from source content. The Content Understanding exercises do not themselves build a Power BI report-commenting solution; integrating their output into reports is a separate task.
 
-### Analyzing Power BI Reports with Content Understanding
+### 4.1 Analyze Power BI Reports with Content Understanding
 
 Content Understanding does not natively analyze PBIX files or connect to interactive Power BI reports and their semantic models. It can analyze supported exports, such as PDFs or screenshots, to extract and interpret visible text, tables, and chart content. These exports represent a specific report state: DAX logic, model relationships, non-visible data, and interactive filtering are not available. Verify extracted numbers and chart interpretations; confidence scores do not establish that a business interpretation is correct. See [Supported input file types and limits](https://learn.microsoft.com/azure/ai-services/content-understanding/service-limits#input-file-limits).
 
@@ -220,17 +220,19 @@ For this workshop, distinguish three use cases:
 
 - **Inspect semantic models programmatically:** use Semantic Link/SemPy, covered under Semantic Link and Semantic Model Analysis.
 
-### Background and Quality Considerations
+### 4.2 Content Understanding: Background and Quality
 
 Content Understanding uses multiple AI models to analyze and cross-validate content. Confidence scores and grounding help assess extracted values and trace them to source documents; they do not guarantee correctness. The exercises below cover custom schemas, labeled examples, document classification, and scenario-specific prebuilt analyzers.
 
 Potential industry scenarios include tax preparation, procurement documents, contract analysis, call center analytics, and media analysis. Check the available prebuilt analyzers for the selected scenario and region.
 
-### Practical Tutorials and How-to Guides
+### 4.3 Generate Narratives in Power BI
 
 - **AI-generated report commentary in Power BI** — [Create a narrative visual with Copilot for Power BI](https://learn.microsoft.com/power-bi/create-reports/copilot-create-narrative) — **Step-by-step how-to:** generate a narrative for a report, page, or selected visuals and refine it with prompts. Requires enabled Copilot and supported paid Fabric capacity.
 
 - **Smart narrative summaries** — [Create smart narrative summaries](https://learn.microsoft.com/power-bi/visuals/power-bi-visualization-smart-narrative) — **Feature guide:** create and customize smart narrative summaries in Power BI; this is a related option distinct from the Copilot narrative guide.
+
+### 4.4 Extract and Validate Content
 
 - 🛠️ **Try industry-specific prebuilt analyzers** — [Quickstart: Try Content Understanding Studio or Microsoft Foundry](https://learn.microsoft.com/azure/ai-services/content-understanding/quickstart/content-understanding-studio) — **Hands-on Studio quickstart:** select a prebuilt analyzer for your scenario, analyze sample or uploaded content, and review extracted fields. Use Studio to explore the available domain-specific analyzers.
 
@@ -244,7 +246,7 @@ Potential industry scenarios include tax preparation, procurement documents, con
 
 **Content Understanding prerequisites:** an Azure subscription, a Microsoft Foundry resource in a supported region, and the required model deployments/configuration. Follow each guide's setup instructions; Azure resource and model usage can incur costs.
 
-### Related Foundry Tools in Fabric
+### 4.5 Related Foundry Tools in Fabric
 
 The following links cover related Azure AI services and Fabric workflows; they are not Content Understanding tutorials or a complete report-commenting solution.
 
@@ -298,7 +300,13 @@ The following links cover related Azure AI services and Fabric workflows; they a
 
 ## 6. Fabric IQ and Ontology
 
+**Teaching note:** Start with the Fabric IQ overview, then choose an ontology creation path. The visualization lab uses an older ontology experience and its own setup notebook; it is not a direct continuation of the newer-experience labs.
+
+### 6.1 Fabric IQ Overview
+
 - **Fabric IQ** — [What is Fabric IQ?](https://learn.microsoft.com/fabric/iq/overview) — **Overview/reference:** introduces Fabric IQ and its components; it is not a build tutorial.
+
+### 6.2 Create and Populate an Ontology
 
 - 🛠️ **Create a Fabric ontology** — [Ontology tutorial: Introduction and environment setup](https://learn.microsoft.com/fabric/iq/ontology/tutorial-0-introduction) — **Hands-on tutorial series (preview):** prepare sample data, create an ontology with entity types and relationships, bind data, and explore it. Requires Fabric capacity and enabled tenant settings.
 
@@ -306,23 +314,35 @@ The following links cover related Azure AI services and Fabric workflows; they a
 
 - 🛠️ **Generate an ontology from a semantic model** — [Build an ontology from a semantic model in Fabric IQ](https://microsoftlearning.github.io/mslearn-fabric/Instructions/Labs/24-build-ontology-semantic-model.html) — **Hands-on lab (preview, approximately 45 minutes):** build a healthcare semantic model, generate ontology entities and relationships, and add eventhouse time-series bindings. Uses the new ontology experience; requires paid or trial Fabric capacity, enabled tenant settings, and Read and Build permissions on the semantic model.
 
+### 6.3 Explore and Visualize Ontology Data
+
 - 🛠️ **Visualize healthcare ontology data** — [Visualize ontology data with Microsoft Fabric IQ](https://microsoftlearning.github.io/mslearn-fabric/Instructions/Labs/27-visualize-ontology.html) — **Hands-on lab (preview, approximately 30 minutes):** use a setup notebook to create the sample ontology, then explore entity instances, relationship graphs, property charts, time-series data, and the Query builder. Requires paid or trial Fabric capacity and enabled ontology tenant settings. Uses the older ontology experience rather than the new experience used in labs 23 and 24.
 
 [Back to top](#proposed-agenda)
 
 ## 7. Fabric Data Agents
 
+**Teaching note:** Learn the agent basics, then select a lakehouse or warehouse exercise. Ontology grounding and external integrations are separate paths; the GraphQL MCP guide connects AI agents to Fabric but does not configure a Fabric Data Agent.
+
+### 7.1 Data Agent Concepts and Setup
+
 - **Data Agent concepts and fundamentals** — [What is a Fabric data agent?](https://learn.microsoft.com/fabric/data-science/concept-data-agent) — **Overview/reference:** introduces Fabric Data Agent concepts and capabilities.
 
 - **Fabric Data Agents** — [Create a Fabric data agent](https://learn.microsoft.com/fabric/data-science/how-to-create-data-agent) — **Step-by-step how-to:** create an agent, add data sources, select tables, and configure it. Requires paid Fabric capacity and accessible data.
+
+### 7.2 Hands-on Data Agent Scenarios
 
 - 🛠️ **Fabric Data Agent with AdventureWorks** — [Data agent example with the AdventureWorks dataset](https://learn.microsoft.com/fabric/data-science/data-agent-end-to-end-tutorial) — **Hands-on tutorial (preview):** populate a lakehouse with sample data, create an agent, and ask questions. Requires paid Fabric capacity and appropriate tenant settings.
 
 - 🛠️ **Chat with sales data using a Fabric Data Agent** — [Chat with your data using Microsoft Fabric data agents](https://microsoftlearning.github.io/mslearn-fabric/Instructions/Labs/22d-copilot-fabric-data-agents.html) — **Hands-on lab (approximately 30 minutes):** create a sales warehouse and configure a data agent, then ask plain English questions and inspect how they are translated into SQL queries. Requires paid Fabric capacity; trial capacity is not supported.
 
+### 7.3 Ground a Data Agent in an Ontology
+
 - **Connect a Data Agent to an ontology** — [Create a data agent grounded in an ontology](https://learn.microsoft.com/fabric/iq/ontology/how-to-create-data-agent) — **Step-by-step how-to (preview):** add an ontology as a data source and ask questions in natural language. Currently, ontologies bound to semantic models are not supported by this integration.
 
 - 🛠️ **Build a healthcare Data Agent with an ontology** — [Build a Fabric data agent with an ontology](https://microsoftlearning.github.io/mslearn-fabric/Instructions/Labs/28-build-data-agent-ontology.html) — **Hands-on lab (preview, approximately 30 minutes):** create the Lamna Healthcare ontology with a setup notebook, configure agent instructions, test natural language questions, and publish and share the agent. Requires paid Fabric capacity and appropriate tenant settings; trial capacity is not supported. Uses the older ontology experience, scheduled to retire on January 31, 2027; it is not a direct continuation of lab 24.
+
+### 7.4 Integrate Data Agents with Copilot Studio and Foundry
 
 - **Use a Data Agent in Copilot Studio** — [Consume a Fabric data agent in Microsoft Copilot Studio](https://learn.microsoft.com/fabric/data-science/data-agent-microsoft-copilot-studio) — **Integration guide:** consume a Fabric Data Agent from Copilot Studio.
 
@@ -330,13 +350,21 @@ The following links cover related Azure AI services and Fabric workflows; they a
 
 - **Use a Data Agent with Microsoft Foundry** — [Consume Fabric data agent from Microsoft Foundry Services](https://learn.microsoft.com/fabric/data-science/data-agent-foundry) · [Fabric data agent as a tool in the Foundry Agent Service](https://learn.microsoft.com/azure/foundry/agents/how-to/tools/fabric) — **Integration guides:** use Fabric Data Agents from Foundry and as an agent tool.
 
+### 7.5 Related Path: Connect AI Agents to Fabric through MCP
+
 - **Connect AI agents to Fabric through MCP** — [Connect AI Agents to Fabric API for GraphQL with a local MCP server](https://learn.microsoft.com/fabric/data-engineering/api-graphql-local-model-context-protocol) — **Integration guide:** connect an AI agent to a Fabric GraphQL API using a local MCP server; this is separate from the Fabric Data Agent integrations above.
 
 [Back to top](#proposed-agenda)
 
 ## 8. Fabric Operations Agents
 
+**Teaching note:** Start with the general monitoring workflow, then consider ontology grounding as a separate configuration path.
+
+### 8.1 Create and Configure an Operations Agent
+
 - **Create a Fabric Operations Agent** — [Create and configure operations agents](https://learn.microsoft.com/fabric/real-time-intelligence/operations-agent) — **Step-by-step how-to:** configure an agent to monitor data, generate a playbook, and recommend actions. Requires non-trial Fabric capacity, a data source, Microsoft Teams, and enabled tenant settings.
+
+### 8.2 Ground an Operations Agent in an Ontology
 
 - **Connect an Operations Agent to an ontology** — [Create an operations agent grounded in an ontology](https://learn.microsoft.com/fabric/iq/ontology/how-to-create-operations-agent) — **Step-by-step how-to (preview):** use an ontology as the agent's knowledge source, configure monitoring, and receive recommendations in Teams. Currently, ontologies bound to semantic models are not supported by this integration.
 
@@ -344,19 +372,23 @@ The following links cover related Azure AI services and Fabric workflows; they a
 
 ## 9. Semantic Link and Semantic Model Analysis
 
-- **Semantic link** — [What is semantic link?](https://learn.microsoft.com/en-us/fabric/data-science/semantic-link-overview) — **Overview/reference:** explains how semantic link connects Power BI semantic models with Fabric data science and notebooks.
+**Teaching note:** Begin with the overview and an end-to-end notebook, then select focused exercises for measures, relationships, and data quality. The ready-made model-analysis notebooks and Semantic Link Labs examples offer additional practical paths.
 
-- **Semantic Link Labs code examples** — [Code Examples](https://github.com/microsoft/semantic-link-labs/wiki/Code-Examples) — **Practical code examples:** use Python notebook snippets for tasks such as model best-practice analysis and memory analysis.
+### 9.1 Semantic Link Overview and Sample Notebooks
+
+- **Semantic link** — [What is semantic link?](https://learn.microsoft.com/en-us/fabric/data-science/semantic-link-overview) — **Overview/reference:** explains how semantic link connects Power BI semantic models with Fabric data science and notebooks.
 
 - **Semantic link sample notebooks** — [Semantic link samples](https://github.com/microsoft/fabric-samples/tree/main/docs-samples/data-science/semantic-link-samples) — **Sample notebook collection:** download the notebooks accompanying the semantic link tutorials below; the repository itself is not a step-by-step guide.
 
-- **Use notebooks with a semantic model** — [Use notebooks with a semantic model](https://learn.microsoft.com/power-bi/transform-model/service-notebooks) — **Practical guide:** open ready-made notebooks from a semantic model to run best-practice and memory analysis. Requires suitable workspace access, model permissions, and Fabric capacity.
+### 9.2 Explore a Semantic Model and Evaluate Measures
 
 - 🛠️ **Explore Semantic Link in an all-in-one notebook** — [Semantic Link all-in-one demo](https://github.com/microsoft/fabric-samples/blob/main/features-samples/semantic-link/Semantic%20Link%20all-in-one%20demo.ipynb) — **Hands-on notebook tutorial:** set up the Retail Analysis sample, explore and query its semantic model, evaluate measures, run DAX, and examine data quality. Requires a Fabric workspace; some examples also require a lakehouse.
 
-- 🛠️ **Analyze functional dependencies** — [Analyze functional dependencies in a semantic model](https://learn.microsoft.com/en-us/fabric/data-science/tutorial-power-bi-dependencies) — **Hands-on notebook tutorial:** use SemPy and a sample model to test dependencies between columns and identify data-quality issues.
-
 - 🛠️ **Extract and calculate Power BI measures** — [Calculate Power BI measures from a Jupyter notebook](https://learn.microsoft.com/en-us/fabric/data-science/tutorial-power-bi-measures) — **Hands-on notebook tutorial:** list and evaluate measures from a sample semantic model using SemPy.
+
+### 9.3 Analyze Relationships and Validate Data
+
+- 🛠️ **Analyze functional dependencies** — [Analyze functional dependencies in a semantic model](https://learn.microsoft.com/en-us/fabric/data-science/tutorial-power-bi-dependencies) — **Hands-on notebook tutorial:** use SemPy and a sample model to test dependencies between columns and identify data-quality issues.
 
 - 🛠️ **Discover semantic model relationships** — [Discover relationships in a semantic model using semantic link](https://learn.microsoft.com/en-us/fabric/data-science/tutorial-power-bi-relationships) — **Hands-on notebook tutorial:** discover relationships between tables and check for relationship violations using SemPy.
 
@@ -364,13 +396,27 @@ The following links cover related Azure AI services and Fabric workflows; they a
 
 - 🛠️ **Validate data with SemPy and Great Expectations** — [Validate data using SemPy and Great Expectations](https://learn.microsoft.com/en-us/fabric/data-science/tutorial-great-expectations) — **Hands-on notebook tutorial:** configure expectations and validate data from a Power BI semantic model. The tutorial uses Great Expectations versions earlier than 1.0.
 
+### 9.4 Analyze Models with Ready-made Notebooks and Semantic Link Labs
+
+- **Use notebooks with a semantic model** — [Use notebooks with a semantic model](https://learn.microsoft.com/power-bi/transform-model/service-notebooks) — **Practical guide:** open ready-made notebooks from a semantic model to run best-practice and memory analysis. Requires suitable workspace access, model permissions, and Fabric capacity.
+
+- **Semantic Link Labs code examples** — [Code Examples](https://github.com/microsoft/semantic-link-labs/wiki/Code-Examples) — **Practical code examples:** use Python notebook snippets for tasks such as model best-practice analysis and memory analysis.
+
 [Back to top](#proposed-agenda)
 
 ## 10. Retrieval-Augmented Generation (RAG)
 
+**Teaching note:** Start with the Fabric RAG quickstart, then explore embeddings and alternative database options for retrieval. The database references are alternatives, not prerequisites for the quickstart.
+
+### 10.1 Build a RAG Solution in Fabric
+
 - 🛠️ **Build RAG in Fabric** — [Build retrieval-augmented generation in Microsoft Fabric](https://learn.microsoft.com/fabric/data-science/quickstart-building-retrieval-augmented-generation) — **Hands-on notebook quickstart:** prepare data, create embeddings and a vector index, then generate answers. Requires Fabric capacity, a lakehouse, and an Azure AI Search resource.
 
+### 10.2 Azure OpenAI for Embeddings and Ingestion
+
 - **Azure OpenAI for embeddings and ingestion** — [Azure OpenAI for big data in Fabric](https://learn.microsoft.com/fabric/data-science/open-ai) — **Practical reference:** Azure OpenAI in Fabric for big-data workflows, including the embeddings/ingestion context for RAG.
+
+### 10.3 Database Options for Vector and Hybrid Search
 
 - **SQL database in Fabric for AI applications** — [Use SQL database in AI applications](https://learn.microsoft.com/fabric/database/sql/use-case-ai-application) · [Vector search in the SQL Database Engine](https://learn.microsoft.com/sql/sql-server/ai/vectors) — **Use-case and technical references:** explore SQL database AI scenarios and vector search for RAG. The second link covers the SQL Database Engine generally.
 
@@ -382,7 +428,11 @@ The following links cover related Azure AI services and Fabric workflows; they a
 
 These are example scenarios rather than complete solutions. The linked guides provide relevant building blocks; integration, validation, and business-specific rules remain separate work.
 
+### 11.1 Identify Building Blocks for a PoC
+
 - **Customer use cases and PoCs** — [Use prebuilt Azure AI services (Foundry Tools) in Fabric](https://learn.microsoft.com/fabric/data-science/ai-services/ai-services-overview) — **Overview/reference:** identify services that can support a proof of concept.
+
+### 11.2 Document Processing and Verification
 
 - **Tax automation** — [Use ai.extract with PySpark in Fabric](https://learn.microsoft.com/fabric/data-science/ai-functions/pyspark/extract) — **Practical code guide:** use extraction as a building block for tax-document processing.
 
@@ -390,9 +440,13 @@ These are example scenarios rather than complete solutions. The linked guides pr
 
 - **Invoice and contract verification** — [Extract data from forms with Document Intelligence in Fabric](https://learn.microsoft.com/fabric/data-science/create-a-multilingual-search-engine-from-forms) — **Related tutorial:** form extraction is a starting point; invoice/contract matching and verification require additional work.
 
+### 11.3 Call and Media Analytics
+
 - **Post-call analytics** — [Use Azure AI Language text analytics in Fabric with SynapseML](https://learn.microsoft.com/fabric/data-science/ai-services/how-to-use-text-analytics) — **Practical code guide:** text analytics can be applied to call transcripts after they have been obtained.
 
 - **Media asset management** — [Use multimodal input with AI Functions in Fabric](https://learn.microsoft.com/fabric/data-science/ai-functions/multimodal-overview) — **Practical reference:** multimodal input, including image analysis, as a building block for media workflows.
+
+### 11.4 Customer Support with a Data Agent
 
 - **Enhanced customer support** — [End-to-end tutorial: Create a Fabric data agent](https://learn.microsoft.com/fabric/data-science/data-agent-end-to-end-tutorial) — **Related tutorial:** demonstrates a Data Agent; adapting it for customer support requires scenario-specific data and design.
 
@@ -400,6 +454,12 @@ These are example scenarios rather than complete solutions. The linked guides pr
 
 ## 12. General Fabric Samples
 
+### 12.1 Browse the Fabric Samples Repository
+
 - **Microsoft Fabric Samples** — [Fabric samples repository](https://github.com/microsoft/fabric-samples/tree/main) — **Sample collection:** browse documentation, feature, and community examples, including code and sample data.
+
+### 12.2 Select and Use Samples
+
+Choose a sample that supports the workshop scenario and review its instructions, prerequisites, permissions, and potential costs before running it. The repository is a collection; individual samples vary in scope and are not necessarily guided tutorials.
 
 [Back to top](#proposed-agenda)
