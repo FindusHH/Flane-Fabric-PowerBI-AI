@@ -19,9 +19,9 @@
 
 ## 1.1 Overview and Orientation
 
-- **Copilot for Power BI overview** — [Copilot for Power BI overview](https://learn.microsoft.com/power-bi/create-reports/copilot-introduction) — **Overview/reference:** introduces Copilot experiences in Power BI.
+- **Copilot for Power BI overview** — [Copilot for Power BI overview](https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-introduction) — **Overview/reference:** introduces Copilot experiences in Power BI.
 
-- **Copilot in Power BI** — [Copilot in Power BI: End-to-End Tutorial](https://learn.microsoft.com/power-bi/create-reports/tutorial-copilot-power-bi-introduction) — **Overview of a hands-on tutorial series:** introduces a scenario from preparing a semantic model to exploring insights with Copilot; the practical steps are in the subsequent tutorial pages.
+- **Copilot in Power BI** — [Copilot in Power BI: End-to-End Tutorial](https://learn.microsoft.com/en-us/power-bi/create-reports/tutorial-copilot-power-bi-introduction) — **Overview of a hands-on tutorial series:** introduces a scenario from preparing a semantic model to exploring insights with Copilot; the practical steps are in the subsequent tutorial pages.
 
 ## 1.2 Sample Data and Exercise Setup
 
@@ -41,15 +41,15 @@
 
 ## 1.3 Prepare the Semantic Model for Copilot
 
-- 🛠️ **Prepare a semantic model for AI** — [Copilot in Power BI tutorial: Prepare semantic model for AI](https://learn.microsoft.com/power-bi/create-reports/tutorial-copilot-power-bi-prepare-model) — **Hands-on tutorial:** prepare a semantic model for Copilot and AI experiences.
+- 🛠️ **Prepare a semantic model for AI** — [Copilot in Power BI tutorial: Prepare semantic model for AI](https://learn.microsoft.com/en-us/power-bi/create-reports/tutorial-copilot-power-bi-prepare-model) — **Hands-on tutorial:** prepare a semantic model for Copilot and AI experiences.
 
-- **AI instructions for a semantic model** — [Prepare your data for AI: AI instructions](https://learn.microsoft.com/power-bi/create-reports/copilot-prepare-data-ai-instructions) — **Feature and configuration guide:** add instructions to help AI interpret model-specific business context.
+- **AI instructions for a semantic model** — [Prepare your data for AI: AI instructions](https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-prepare-data-ai-instructions) — **Feature and configuration guide:** add instructions to help AI interpret model-specific business context.
 
-- **Ask questions about a semantic model** — [Use Copilot with semantic models](https://learn.microsoft.com/power-bi/create-reports/copilot-semantic-models) — **Feature and workflow guide:** explains model preparation and Copilot experiences; useful context, but not one end-to-end exercise. Use questions to validate how well Copilot understands the prepared model.
+- **Ask questions about a semantic model** — [Use Copilot with semantic models](https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-semantic-models) — **Feature and workflow guide:** explains model preparation and Copilot experiences; useful context, but not one end-to-end exercise. Use questions to validate how well Copilot understands the prepared model.
 
 ## 1.4 Develop DAX Queries and Measures
 
-- **Create DAX queries with Copilot** — [Write DAX queries with Copilot](https://learn.microsoft.com/dax/dax-copilot#sample-prompts) — **Step-by-step how-to:** enter a natural-language prompt to generate a DAX query, run it to inspect results, refine it conversationally, and keep or discard it. Includes examples such as sales or profit by product.
+- **Create DAX queries with Copilot** — [Write DAX queries with Copilot](https://learn.microsoft.com/en-us/dax/dax-copilot#sample-prompts) — **Step-by-step how-to:** enter a natural-language prompt to generate a DAX query, run it to inspect results, refine it conversationally, and keep or discard it. Includes examples such as sales or profit by product.
 
 - **Generate and add measures to a semantic model** — [Use Copilot in Power BI to prepare and model data: Create measures from DAX queries](https://learn.microsoft.com/en-us/training/modules/power-bi-copilot/2-prepare-data-copilot#create-measures-from-dax-queries) — **Guided learning unit:** prompt Copilot to suggest measures, run the generated DAX query to evaluate them, and use **Update model with changes** to add selected measures to the model.
 
@@ -61,11 +61,11 @@
 
 - 🛠️ **Create a report with Copilot using sample financial data** — [Tutorial: Get started creating in the Power BI service](https://learn.microsoft.com/en-us/power-bi/fundamentals/service-get-started#use-copilot-to-create-a-report-in-power-bi) — **Hands-on tutorial:** import the Financial Sample Excel data, ask Copilot to create a Gross Sales report, generate a Profit Analysis by Product page, and pin visuals to a dashboard. If Copilot is unavailable, the tutorial provides a manual-reporting alternative.
 
-- **Create reports with Copilot** — [Create and edit Power BI reports with Copilot](https://learn.microsoft.com/power-bi/create-reports/copilot-create-reports) — **Step-by-step how-to:** create a report page with prompts, then add, change, or delete visuals. Use this as a transfer task: apply the steps to an additional page or your own report.
+- **Create reports with Copilot** — [Create and edit Power BI reports with Copilot](https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-create-reports) — **Step-by-step how-to:** create a report page with prompts, then add, change, or delete visuals. Use this as a transfer task: apply the steps to an additional page or your own report.
 
 ## 1.6 Use Copilot as a Business User (Optional)
 
-- **Standalone Copilot in Power BI** — [Standalone Copilot in Power BI](https://learn.microsoft.com/power-bi/explore-reports/mobile/mobile-standalone-copilot) — **Feature guide:** covers the standalone Copilot experience in Power BI mobile as a consumer perspective, not a report-authoring exercise.
+- **Standalone Copilot in Power BI** — [Standalone Copilot in Power BI](https://learn.microsoft.com/en-us/power-bi/explore-reports/mobile/mobile-standalone-copilot) — **Feature guide:** covers the standalone Copilot experience in Power BI mobile as a consumer perspective, not a report-authoring exercise.
 
 [Back to contents](#chapter-contents)
 
