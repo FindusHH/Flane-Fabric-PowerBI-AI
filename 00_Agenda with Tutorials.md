@@ -1,4 +1,4 @@
-<sub>Version 1.3.1</sub>
+<sub>Version 1.4.0</sub>
 
 <a id="proposed-agenda"></a>
 

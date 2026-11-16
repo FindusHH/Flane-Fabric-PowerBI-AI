@@ -1,6 +1,6 @@
 # 10. Fabric Apps with Rayfin
 
-[Back to agenda](./Agenda%20with%20Tutorials.md)
+[Back to agenda](./00_Agenda%20with%20Tutorials.md)
 
 <a id="chapter-contents"></a>
 
@@ -27,4 +27,4 @@
 
 [Back to contents](#chapter-contents)
 
-[Back to agenda](./Agenda%20with%20Tutorials.md)
+[Back to agenda](./00_Agenda%20with%20Tutorials.md)

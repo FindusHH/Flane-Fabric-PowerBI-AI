@@ -1,6 +1,6 @@
 # 12. Customer Use Cases and Proofs of Concept
 
-[Back to agenda](./Agenda%20with%20Tutorials.md)
+[Back to agenda](./00_Agenda%20with%20Tutorials.md)
 
 <a id="chapter-contents"></a>
 
@@ -39,4 +39,4 @@ These are example scenarios rather than complete solutions. The linked guides pr
 
 [Back to contents](#chapter-contents)
 
-[Back to agenda](./Agenda%20with%20Tutorials.md)
+[Back to agenda](./00_Agenda%20with%20Tutorials.md)

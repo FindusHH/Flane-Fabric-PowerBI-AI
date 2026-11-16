@@ -1,6 +1,6 @@
 # 4. GenAI-based Report-Commenting
 
-[Back to agenda](./Agenda%20with%20Tutorials.md)
+[Back to agenda](./00_Agenda%20with%20Tutorials.md)
 
 <a id="chapter-contents"></a>
 
@@ -70,4 +70,4 @@ The following links cover related Azure AI services and Fabric workflows; they a
 
 [Back to contents](#chapter-contents)
 
-[Back to agenda](./Agenda%20with%20Tutorials.md)
+[Back to agenda](./00_Agenda%20with%20Tutorials.md)
