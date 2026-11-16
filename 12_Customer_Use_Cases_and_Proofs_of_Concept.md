@@ -11,7 +11,7 @@
 - [12.3 Call and Media Analytics](#123-call-and-media-analytics)
 - [12.4 Customer Support with a Data Agent](#124-customer-support-with-a-data-agent)
 
-**Link guide:** **Hands-on tutorial** means a guided, step-by-step exercise. 🛠️ marks hands-on tutorials, labs, and quickstarts, but not overview pages or code example collections. **Practical code guide** means examples to run in a notebook or SQL editor. **Overview/reference** explains concepts, features, or architecture but is not a complete exercise to follow.
+**Link guide:** **Hands-on tutorial** means a guided, step-by-step exercise. ⭐ marks hands-on tutorials, labs, and quickstarts, but not overview pages or code example collections. **Practical code guide** means examples to run in a notebook or SQL editor. **Overview/reference** explains concepts, features, or architecture but is not a complete exercise to follow.
 
 These are example scenarios rather than complete solutions. The linked guides provide relevant building blocks; integration, validation, and business-specific rules remain separate work.
 

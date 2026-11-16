@@ -9,7 +9,7 @@
 - [8.1 Create and Configure an Operations Agent](#81-create-and-configure-an-operations-agent)
 - [8.2 Ground an Operations Agent in an Ontology](#82-ground-an-operations-agent-in-an-ontology)
 
-**Link guide:** **Hands-on tutorial** means a guided, step-by-step exercise. 🛠️ marks hands-on tutorials, labs, and quickstarts, but not overview pages or code example collections. **Practical code guide** means examples to run in a notebook or SQL editor. **Overview/reference** explains concepts, features, or architecture but is not a complete exercise to follow.
+**Link guide:** **Hands-on tutorial** means a guided, step-by-step exercise. ⭐ marks hands-on tutorials, labs, and quickstarts, but not overview pages or code example collections. **Practical code guide** means examples to run in a notebook or SQL editor. **Overview/reference** explains concepts, features, or architecture but is not a complete exercise to follow.
 
 **Teaching note:** Start with the general monitoring workflow, then consider ontology grounding as a separate configuration path.
 

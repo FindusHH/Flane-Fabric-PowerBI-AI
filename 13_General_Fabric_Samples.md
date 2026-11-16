@@ -9,7 +9,7 @@
 - [13.1 Browse the Fabric Samples Repository](#131-browse-the-fabric-samples-repository)
 - [13.2 Select and Use Samples](#132-select-and-use-samples)
 
-**Link guide:** **Hands-on tutorial** means a guided, step-by-step exercise. 🛠️ marks hands-on tutorials, labs, and quickstarts, but not overview pages or code example collections. **Practical code guide** means examples to run in a notebook or SQL editor. **Overview/reference** explains concepts, features, or architecture but is not a complete exercise to follow.
+**Link guide:** **Hands-on tutorial** means a guided, step-by-step exercise. ⭐ marks hands-on tutorials, labs, and quickstarts, but not overview pages or code example collections. **Practical code guide** means examples to run in a notebook or SQL editor. **Overview/reference** explains concepts, features, or architecture but is not a complete exercise to follow.
 
 ## 13.1 Browse the Fabric Samples Repository
 

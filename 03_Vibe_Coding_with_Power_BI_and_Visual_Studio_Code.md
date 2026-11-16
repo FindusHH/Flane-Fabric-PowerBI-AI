@@ -19,7 +19,7 @@
 - [3.11 Optional: Notebook Authoring and Embedded Analytics](#311-optional-notebook-authoring-and-embedded-analytics)
 - [3.12 Optional: One-Day Workshop Plan](#312-optional-one-day-workshop-plan)
 
-**Link guide:** **Hands-on tutorial** means a guided, step-by-step exercise. 🛠️ marks hands-on tutorials, labs, and quickstarts, but not overview pages or code example collections. **Practical code guide** means examples to run in a notebook or SQL editor. **Overview/reference** explains concepts, features, or architecture but is not a complete exercise to follow.
+**Link guide:** **Hands-on tutorial** means a guided, step-by-step exercise. ⭐ marks hands-on tutorials, labs, and quickstarts, but not overview pages or code example collections. **Practical code guide** means examples to run in a notebook or SQL editor. **Overview/reference** explains concepts, features, or architecture but is not a complete exercise to follow.
 
 **Teaching note:** This chapter integrates the Windows training material into one development path. First understand the tools and project formats, then prepare a baseline, work on the model, build the report, validate, and deploy. AI agents, MCP, published-data queries, and the one-day schedule are optional extensions. The separate [Fabric Apps with Rayfin](./10_Fabric_Apps_with_Rayfin.md) chapter builds applications rather than PBIR reports.
 
@@ -121,7 +121,7 @@ After installation, use `/skills` in Copilot CLI to verify that the expected ski
 
 ## 3.5 Prepare a Project and Plan Changes
 
-- 🛠️ **Microsoft Learn end-to-end Power BI tutorial** — [From raw data to a shared Power BI app](https://learn.microsoft.com/en-us/power-bi/create-reports/tutorial-end-to-end-power-bi) — **Hands-on tutorial:** acquire and transform data, build a semantic model and report, then publish and distribute a Power BI app. It includes a TMDL fast path and an optional Copilot/MCP path. Follow the article's version, account, license, workspace-role, and tenant-setting prerequisites; the Power BI app is not a Fabric app.
+- ⭐ **Microsoft Learn end-to-end Power BI tutorial** — [From raw data to a shared Power BI app](https://learn.microsoft.com/en-us/power-bi/create-reports/tutorial-end-to-end-power-bi) — **Hands-on tutorial:** acquire and transform data, build a semantic model and report, then publish and distribute a Power BI app. It includes a TMDL fast path and an optional Copilot/MCP path. Follow the article's version, account, license, workspace-role, and tenant-setting prerequisites; the Power BI app is not a Fabric app.
 
 For this workshop, start from phases 1–3 of that tutorial or a suitable prepared model from the [sample files in Chapter 1](./01_Copilot_in_Power_BI_Reports_and_DAX.md#12-sample-data-and-exercise-setup). These samples have different schemas; inspect the actual tables and adapt all examples instead of assuming they are interchangeable.
 
@@ -193,7 +193,7 @@ For example, the older Consumption MCP documentation states that user-authentica
 
 Local Git tracks the project files. [Fabric Git integration](https://learn.microsoft.com/en-us/fabric/cicd/git-integration/intro-to-git-integration) connects a workspace to a repository and is a separate capability; check the supported item types and preview status. Deployment pipelines, APIs, and `fabric-cicd` are alternative or complementary delivery options, not requirements for every local exercise.
 
-- 🛠️ **Deploy a Power BI project with fabric-cicd** — [Deploy Power BI projects using fabric-cicd](https://learn.microsoft.com/en-us/power-bi/developer/projects/projects-deploy-fabric-cicd) — **Hands-on quickstart:** install the documented Python library, prepare a PBIP project, create the guide's deployment script, and deploy to a Fabric workspace. Requires a supported Python version, a PBIP project, and Contributor access; automation has additional identity and repository prerequisites. Configure data-source credentials as required and use a test workspace. Review deployment and cleanup settings before running automation.
+- ⭐ **Deploy a Power BI project with fabric-cicd** — [Deploy Power BI projects using fabric-cicd](https://learn.microsoft.com/en-us/power-bi/developer/projects/projects-deploy-fabric-cicd) — **Hands-on quickstart:** install the documented Python library, prepare a PBIP project, create the guide's deployment script, and deploy to a Fabric workspace. Requires a supported Python version, a PBIP project, and Contributor access; automation has additional identity and repository prerequisites. Configure data-source credentials as required and use a test workspace. Review deployment and cleanup settings before running automation.
 
 ## 3.11 Optional: Notebook Authoring and Embedded Analytics
 

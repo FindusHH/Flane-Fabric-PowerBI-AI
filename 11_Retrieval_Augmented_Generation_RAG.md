@@ -10,13 +10,13 @@
 - [11.2 Azure OpenAI for Embeddings and Ingestion](#112-azure-openai-for-embeddings-and-ingestion)
 - [11.3 Database Options for Vector and Hybrid Search](#113-database-options-for-vector-and-hybrid-search)
 
-**Link guide:** **Hands-on tutorial** means a guided, step-by-step exercise. 🛠️ marks hands-on tutorials, labs, and quickstarts, but not overview pages or code example collections. **Practical code guide** means examples to run in a notebook or SQL editor. **Overview/reference** explains concepts, features, or architecture but is not a complete exercise to follow.
+**Link guide:** **Hands-on tutorial** means a guided, step-by-step exercise. ⭐ marks hands-on tutorials, labs, and quickstarts, but not overview pages or code example collections. **Practical code guide** means examples to run in a notebook or SQL editor. **Overview/reference** explains concepts, features, or architecture but is not a complete exercise to follow.
 
 **Teaching note:** Start with the Fabric RAG quickstart, then explore embeddings and alternative database options for retrieval. The database references are alternatives, not prerequisites for the quickstart.
 
 ## 11.1 Build a RAG Solution in Fabric
 
-- 🛠️ **Build RAG in Fabric** — [Build retrieval-augmented generation in Microsoft Fabric](https://learn.microsoft.com/en-us/fabric/data-science/quickstart-building-retrieval-augmented-generation) — **Hands-on notebook quickstart:** prepare data, create embeddings and a vector index, then generate answers. Requires Fabric capacity, a lakehouse, and an Azure AI Search resource.
+- ⭐ **Build RAG in Fabric** — [Build retrieval-augmented generation in Microsoft Fabric](https://learn.microsoft.com/en-us/fabric/data-science/quickstart-building-retrieval-augmented-generation) — **Hands-on notebook quickstart:** prepare data, create embeddings and a vector index, then generate answers. Requires Fabric capacity, a lakehouse, and an Azure AI Search resource.
 
 ## 11.2 Azure OpenAI for Embeddings and Ingestion
 

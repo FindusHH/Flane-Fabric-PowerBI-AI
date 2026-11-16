@@ -13,7 +13,7 @@
 - [1.5 Create and Refine Reports with Copilot](#15-create-and-refine-reports-with-copilot)
 - [1.6 Use Copilot as a Business User (Optional)](#16-use-copilot-as-a-business-user-optional)
 
-**Link guide:** **Hands-on tutorial** means a guided, step-by-step exercise. 🛠️ marks hands-on tutorials, labs, and quickstarts, but not overview pages or code example collections. **Practical code guide** means examples to run in a notebook or SQL editor. **Overview/reference** explains concepts, features, or architecture but is not a complete exercise to follow.
+**Link guide:** **Hands-on tutorial** means a guided, step-by-step exercise. ⭐ marks hands-on tutorials, labs, and quickstarts, but not overview pages or code example collections. **Practical code guide** means examples to run in a notebook or SQL editor. **Overview/reference** explains concepts, features, or architecture but is not a complete exercise to follow.
 
 **Teaching note:** The linked resources use different datasets: Financial Sample for report creation, Revenue Opportunities for AI-ready model preparation, and an AdventureWorks scenario in the DAX learning unit. Use one primary seminar dataset and adapt prompts, table names, and measures, or clearly announce each dataset switch. The exercises should not be treated as one continuous lab with interchangeable models. The Artificial Intelligence (Contoso) sample is optional enrichment, not a Copilot report-generation exercise.
 
@@ -21,7 +21,7 @@
 
 - **Copilot for Power BI overview** — [Copilot for Power BI overview](https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-introduction) — **Overview/reference:** introduces Copilot experiences in Power BI.
 
-- 🛠️ <strong style="color: #006400; background-color: #FFF59D;">Copilot in Power BI</strong> — [Copilot in Power BI: End-to-End Tutorial](https://learn.microsoft.com/en-us/power-bi/create-reports/tutorial-copilot-power-bi-introduction) — **Hands-on tutorial series overview:** introduces an end-to-end scenario from preparing a semantic model to exploring insights with Copilot; follow the linked tutorial pages for the practical steps.
+- ⭐ **Copilot in Power BI** — [Copilot in Power BI: End-to-End Tutorial](https://learn.microsoft.com/en-us/power-bi/create-reports/tutorial-copilot-power-bi-introduction) — **Hands-on tutorial series overview:** introduces an end-to-end scenario from preparing a semantic model to exploring insights with Copilot; follow the linked tutorial pages for the practical steps.
 
 ## 1.2 Sample Data and Exercise Setup
 
@@ -35,13 +35,13 @@
 
   - **AdventureWorks Sales** — [Download Power BI file (.pbix)](https://github.com/microsoft/powerbi-desktop-samples/raw/main/AdventureWorks%20Sales%20Sample/AdventureWorks%20Sales.pbix) or [Excel workbook (.xlsx)](https://github.com/microsoft/powerbi-desktop-samples/raw/main/AdventureWorks%20Sales%20Sample/AdventureWorks%20Sales.xlsx) — use the prepared report/model or import the source tables for DAX practice. This is an alternative AdventureWorks variant, not the exact model used in the DAX learning unit; check and adapt table names and measures.
 
-- **Artificial Intelligence sample for Power BI** — [Artificial Intelligence sample for Power BI: Take a tour](https://learn.microsoft.com/en-us/power-bi/create-reports/sample-artificial-intelligence) — **Guided sample tour (optional):** explore the Contoso report to investigate revenue contributors, breakdowns, and anomalies. <span style="color: red;">This is a Power BI AI-feature sample, not a Copilot report-generation tutorial.</span> Follow the [sample setup and .pbix download instructions](https://learn.microsoft.com/en-us/power-bi/create-reports/sample-artificial-intelligence#get-the-sample): first add the built-in sample to **My workspace**, then download the report and data from the Power BI service.
+- **Artificial Intelligence sample for Power BI** — [Artificial Intelligence sample for Power BI: Take a tour](https://learn.microsoft.com/en-us/power-bi/create-reports/sample-artificial-intelligence) — **Guided sample tour (optional):** explore the Contoso report to investigate revenue contributors, breakdowns, and anomalies. ⚠️ **This is a Power BI AI-feature sample, not a Copilot report-generation tutorial.** Follow the [sample setup and .pbix download instructions](https://learn.microsoft.com/en-us/power-bi/create-reports/sample-artificial-intelligence#get-the-sample): first add the built-in sample to **My workspace**, then download the report and data from the Power BI service.
 
 **Copilot access:** Downloading the sample files does not provide Copilot access. The Copilot exercises require suitable capacity, permissions, and enabled settings as described in the linked setup guide.
 
 ## 1.3 Prepare the Semantic Model for Copilot
 
-- 🛠️ **Prepare a semantic model for AI** — [Copilot in Power BI tutorial: Prepare semantic model for AI](https://learn.microsoft.com/en-us/power-bi/create-reports/tutorial-copilot-power-bi-prepare-model) — **Hands-on tutorial:** prepare a semantic model for Copilot and AI experiences.
+- ⭐ **Prepare a semantic model for AI** — [Copilot in Power BI tutorial: Prepare semantic model for AI](https://learn.microsoft.com/en-us/power-bi/create-reports/tutorial-copilot-power-bi-prepare-model) — **Hands-on tutorial:** prepare a semantic model for Copilot and AI experiences.
 
 - **AI instructions for a semantic model** — [Prepare your data for AI: AI instructions](https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-prepare-data-ai-instructions) — **Feature and configuration guide:** add instructions to help AI interpret model-specific business context.
 
@@ -59,7 +59,7 @@
 
 - **Write prompts for report pages** — [Write Copilot prompts for creating report pages in Power BI](https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-prompts-report-pages) — **Prompt examples and guidance:** use sample prompts and generated pages to improve report-creation requests; review and refine the generated results.
 
-- 🛠️ **Create a report with Copilot using sample financial data** — [Tutorial: Get started creating in the Power BI service](https://learn.microsoft.com/en-us/power-bi/fundamentals/service-get-started#use-copilot-to-create-a-report-in-power-bi) — **Hands-on tutorial:** import the Financial Sample Excel data, ask Copilot to create a Gross Sales report, generate a Profit Analysis by Product page, and pin visuals to a dashboard. If Copilot is unavailable, the tutorial provides a manual-reporting alternative.
+- ⭐ **Create a report with Copilot using sample financial data** — [Tutorial: Get started creating in the Power BI service](https://learn.microsoft.com/en-us/power-bi/fundamentals/service-get-started#use-copilot-to-create-a-report-in-power-bi) — **Hands-on tutorial:** import the Financial Sample Excel data, ask Copilot to create a Gross Sales report, generate a Profit Analysis by Product page, and pin visuals to a dashboard. If Copilot is unavailable, the tutorial provides a manual-reporting alternative.
 
 - **Create reports with Copilot** — [Create and edit Power BI reports with Copilot](https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-create-reports) — **Step-by-step how-to:** create a report page with prompts, then add, change, or delete visuals. Use this as a transfer task: apply the steps to an additional page or your own report.
 
