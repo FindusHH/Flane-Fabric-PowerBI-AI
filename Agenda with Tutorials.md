@@ -1,5 +1,6 @@
 <sub>Version 1.2.1</sub>
 
+<a id="proposed-agenda"></a>
 
 # Course: Power BI & Fabric AI Advanced
 
