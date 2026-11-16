@@ -31,7 +31,7 @@
 
   - **Financial Sample** — [Download Excel workbook (.xlsx)](https://go.microsoft.com/fwlink/?LinkID=521962) — use this sales and profit dataset for the report-creation tutorial in section 1.5.
 
-  - **Revenue Opportunities** — [Download Power BI file (.pbix)](https://github.com/microsoft/powerbi-desktop-samples/raw/refs/heads/main/Sample%20Reports/Revenue%20Opportunities.pbix) — use the software-sales model required for the model-preparation tutorial in section 1.3. Review the [tutorial setup and prerequisites](https://learn.microsoft.com/en-us/power-bi/create-reports/tutorial-copilot-power-bi-get-started) before starting.
+  - **Revenue Opportunities** — [Download Power BI file (.pbix)](https://github.com/microsoft/powerbi-desktop-samples/raw/refs/heads/main/Sample%20Reports/Revenue%20Opportunities.pbix) — use the software-sales model required for the model-preparation tutorial in the Copilot tutorial series. Review the [tutorial setup and prerequisites](https://learn.microsoft.com/en-us/power-bi/create-reports/tutorial-copilot-power-bi-get-started) before starting.
 
   - **AdventureWorks Sales** — [Download Power BI file (.pbix)](https://github.com/microsoft/powerbi-desktop-samples/raw/main/AdventureWorks%20Sales%20Sample/AdventureWorks%20Sales.pbix) or [Excel workbook (.xlsx)](https://github.com/microsoft/powerbi-desktop-samples/raw/main/AdventureWorks%20Sales%20Sample/AdventureWorks%20Sales.xlsx) — use the prepared report/model or import the source tables for DAX practice. This is an alternative AdventureWorks variant, not the exact model used in the DAX learning unit; check and adapt table names and measures.
 
@@ -40,10 +40,6 @@
 **Copilot access:** Downloading the sample files does not provide Copilot access. The Copilot exercises require suitable capacity, permissions, and enabled settings as described in the linked setup guide.
 
 ## 1.3 Prepare the Semantic Model for Copilot
-
-- ⭐ **Prepare a semantic model for AI** — [Copilot in Power BI tutorial: Prepare semantic model for AI](https://learn.microsoft.com/en-us/power-bi/create-reports/tutorial-copilot-power-bi-prepare-model) — **Hands-on tutorial:** prepare a semantic model for Copilot and AI experiences.
-
-- **AI instructions for a semantic model** — [Prepare your data for AI: AI instructions](https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-prepare-data-ai-instructions) — **Feature and configuration guide:** add instructions to help AI interpret model-specific business context.
 
 - **Ask questions about a semantic model** — [Use Copilot with semantic models](https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-semantic-models) — **Feature and workflow guide:** explains model preparation and Copilot experiences; useful context, but not one end-to-end exercise. Use questions to validate how well Copilot understands the prepared model.
 
@@ -56,6 +52,8 @@
 **Key distinction:** Keeping a DAX query does not create reusable model measures. Run and validate the query first, then use **Update model with changes** on a writable model to persist selected measures.
 
 ## 1.5 Create and Refine Reports with Copilot
+
+⚠️ **Copilot workspace:** For this exercise, use a shared workspace in Fabric or the Power BI service rather than relying on **My workspace**. In Power BI Desktop, if prompted, select a Copilot-compatible workspace to associate with the report; it does not have to be the workspace where you publish it. Your organization must enable Copilot and provide appropriate permissions and supported capacity; a user-assigned Fabric Copilot capacity can also provide access. See [Use Copilot in Power BI Desktop](https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-power-bi-desktop) and [Fabric Copilot capacity](https://learn.microsoft.com/en-us/fabric/enterprise/fabric-copilot-capacity).
 
 - **Write prompts for report pages** — [Write Copilot prompts for creating report pages in Power BI](https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-prompts-report-pages) — **Prompt examples and guidance:** use sample prompts and generated pages to improve report-creation requests; review and refine the generated results.
 
