@@ -15,7 +15,7 @@
    - [1.5 Create and Refine Reports with Copilot](#15-create-and-refine-reports-with-copilot)
    - [1.6 Use Copilot as a Business User (Optional)](#16-use-copilot-as-a-business-user-optional)
 
-2. [Copilot in Fabric: Data Transformation, Spark, and SQL](#2-copilot-in-fabric-data-transformation-spark-and-sql)
+2. [**Copilot in Fabric: Data Transformation, Spark, and SQL**](#2-copilot-in-fabric-data-transformation-spark-and-sql)
 
    - [2.1 Copilot in Fabric Overview](#21-copilot-in-fabric-overview)
    - [2.2 Data Preparation and Data Factory Pipelines](#22-data-preparation-and-data-factory-pipelines)
@@ -23,34 +23,70 @@
    - [2.4 SQL Analysis in Fabric Data Warehouse](#24-sql-analysis-in-fabric-data-warehouse)
    - [2.5 Optional: Real-Time Intelligence](#25-optional-real-time-intelligence)
 
-3. [Vibe Coding with Power BI and Visual Studio Code](#3-vibe-coding-with-power-bi-and-visual-studio-code)
+3. [**Vibe Coding with Power BI and Visual Studio Code**](#3-vibe-coding-with-power-bi-and-visual-studio-code)
 
    - [3.1 Agentic Power BI Development Workflow](#31-agentic-power-bi-development-workflow)
    - [3.2 Build Fabric Apps: From Quickstart to GitHub Copilot](#32-build-fabric-apps-from-quickstart-to-github-copilot)
    - [3.3 Optional Paths: Notebook Authoring and Embedded Analytics](#33-optional-paths-notebook-authoring-and-embedded-analytics)
 
-4. [GenAI-based Report-Commenting](#4-genai-based-report-commenting)
+4. [**GenAI-based Report-Commenting**](#4-genai-based-report-commenting)
 
-5. [Fabric AI Functions and Azure OpenAI](#5-fabric-ai-functions-and-azure-openai)
+   - [4.1 Analyze Power BI Reports with Content Understanding](#41-analyze-power-bi-reports-with-content-understanding)
+   - [4.2 Content Understanding: Background and Quality](#42-content-understanding-background-and-quality)
+   - [4.3 Generate Narratives in Power BI](#43-generate-narratives-in-power-bi)
+   - [4.4 Extract and Validate Content](#44-extract-and-validate-content)
+   - [4.5 Related Foundry Tools in Fabric](#45-related-foundry-tools-in-fabric)
+
+5. [**Fabric AI Functions and Azure OpenAI**](#5-fabric-ai-functions-and-azure-openai)
 
    - [5.1 Fabric AI Functions: Overview and Setup](#51-fabric-ai-functions-overview-and-setup)
    - [5.2 Use and Customize AI Functions in Notebooks](#52-use-and-customize-ai-functions-in-notebooks)
    - [5.3 Use AI Functions in Fabric Data Warehouse](#53-use-ai-functions-in-fabric-data-warehouse)
    - [5.4 Integrate Azure OpenAI in Fabric Notebooks](#54-integrate-azure-openai-in-fabric-notebooks)
 
-6. [Fabric IQ and Ontology](#6-fabric-iq-and-ontology)
+6. [**Fabric IQ and Ontology**](#6-fabric-iq-and-ontology)
 
-7. [Fabric Data Agents](#7-fabric-data-agents)
+   - [6.1 Fabric IQ Overview](#61-fabric-iq-overview)
+   - [6.2 Create and Populate an Ontology](#62-create-and-populate-an-ontology)
+   - [6.3 Explore and Visualize Ontology Data](#63-explore-and-visualize-ontology-data)
 
-8. [Fabric Operations Agents](#8-fabric-operations-agents)
+7. [**Fabric Data Agents**](#7-fabric-data-agents)
 
-9. [Semantic Link and Semantic Model Analysis](#9-semantic-link-and-semantic-model-analysis)
+   - [7.1 Data Agent Concepts and Setup](#71-data-agent-concepts-and-setup)
+   - [7.2 Hands-on Data Agent Scenarios](#72-hands-on-data-agent-scenarios)
+   - [7.3 Ground a Data Agent in an Ontology](#73-ground-a-data-agent-in-an-ontology)
+   - [7.4 Integrate Data Agents with Copilot Studio and Foundry](#74-integrate-data-agents-with-copilot-studio-and-foundry)
+   - [7.5 Related Path: Connect AI Agents to Fabric through MCP](#75-related-path-connect-ai-agents-to-fabric-through-mcp)
 
-10. [Retrieval-Augmented Generation (RAG)](#10-retrieval-augmented-generation-rag)
+8. [**Fabric Operations Agents**](#8-fabric-operations-agents)
 
-11. [Customer Use Cases and Proofs of Concept](#11-customer-use-cases-and-proofs-of-concept)
+   - [8.1 Create and Configure an Operations Agent](#81-create-and-configure-an-operations-agent)
+   - [8.2 Ground an Operations Agent in an Ontology](#82-ground-an-operations-agent-in-an-ontology)
 
-12. [General Fabric Samples](#12-general-fabric-samples)
+9. [**Semantic Link and Semantic Model Analysis**](#9-semantic-link-and-semantic-model-analysis)
+
+   - [9.1 Semantic Link Overview and Sample Notebooks](#91-semantic-link-overview-and-sample-notebooks)
+   - [9.2 Explore a Semantic Model and Evaluate Measures](#92-explore-a-semantic-model-and-evaluate-measures)
+   - [9.3 Analyze Relationships and Validate Data](#93-analyze-relationships-and-validate-data)
+   - [9.4 Analyze Models with Ready-made Notebooks and Semantic Link Labs](#94-analyze-models-with-ready-made-notebooks-and-semantic-link-labs)
+
+10. [**Retrieval-Augmented Generation (RAG)**](#10-retrieval-augmented-generation-rag)
+
+   - [10.1 Build a RAG Solution in Fabric](#101-build-a-rag-solution-in-fabric)
+   - [10.2 Azure OpenAI for Embeddings and Ingestion](#102-azure-openai-for-embeddings-and-ingestion)
+   - [10.3 Database Options for Vector and Hybrid Search](#103-database-options-for-vector-and-hybrid-search)
+
+11. [**Customer Use Cases and Proofs of Concept**](#11-customer-use-cases-and-proofs-of-concept)
+
+   - [11.1 Identify Building Blocks for a PoC](#111-identify-building-blocks-for-a-poc)
+   - [11.2 Document Processing and Verification](#112-document-processing-and-verification)
+   - [11.3 Call and Media Analytics](#113-call-and-media-analytics)
+   - [11.4 Customer Support with a Data Agent](#114-customer-support-with-a-data-agent)
+
+12. [**General Fabric Samples**](#12-general-fabric-samples)
+
+   - [12.1 Browse the Fabric Samples Repository](#121-browse-the-fabric-samples-repository)
+   - [12.2 Select and Use Samples](#122-select-and-use-samples)
 
 **Link guide:** **Hands-on tutorial** means a guided, step-by-step exercise. 🛠️ marks hands-on tutorials, labs, and quickstarts, but not overview pages or code example collections. **Practical code guide** means examples to run in a notebook or SQL editor. **Overview/reference** explains concepts, features, or architecture but is not a complete exercise to follow.
 
