@@ -17,11 +17,10 @@
 - [3.9 Quality, Security, and Governance](#39-quality-security-and-governance)
 - [3.10 Review and Deploy Changes](#310-review-and-deploy-changes)
 - [3.11 Optional: Notebook Authoring and Embedded Analytics](#311-optional-notebook-authoring-and-embedded-analytics)
-- [3.12 Optional: One-Day Workshop Plan](#312-optional-one-day-workshop-plan)
 
 **Link guide:** **Hands-on tutorial** means a guided, step-by-step exercise. ⭐ marks hands-on tutorials, labs, and quickstarts, but not overview pages or code example collections. **Practical code guide** means examples to run in a notebook or SQL editor. **Overview/reference** explains concepts, features, or architecture but is not a complete exercise to follow.
 
-**Teaching note:** This chapter integrates the Windows training material into one development path. First understand the tools and project formats, then prepare a baseline, work on the model, build the report, validate, and deploy. AI agents, MCP, published-data queries, and the one-day schedule are optional extensions. The separate [Fabric Apps with Rayfin](./10_Fabric_Apps_with_Rayfin.md) chapter builds applications rather than PBIR reports.
+**Teaching note:** This chapter integrates the Windows training material into one development path. First understand the tools and project formats, then prepare a baseline, work on the model, build the report, validate, and deploy. AI agents, MCP, and published-data queries are optional extensions. The separate [Fabric Apps with Rayfin](./10_Fabric_Apps_with_Rayfin.md) chapter builds applications rather than PBIR reports.
 
 ## 3.1 Learning Goals and Workflow
 
@@ -47,7 +46,11 @@ The teaching sequence is **requirements → baseline → model inspection → pl
 | **GitHub Copilot and optional Power BI agent tools** | Assist with plans and changes when the organization permits their use and the required access is available. The exercises can also be performed manually. |
 | **Visual Studio with Analysis Services Projects** | Optional specialist environment for tabular/SSDT projects and XMLA-based model work; it is not a Power BI report designer. See [Analysis Services tools](https://learn.microsoft.com/en-us/analysis-services/tools-and-applications-used-in-analysis-services) and [XMLA endpoint requirements](https://learn.microsoft.com/en-us/fabric/enterprise/powerbi/service-premium-connect-tools). |
 
-Use a current Power BI Desktop release, a test model without confidential data, and an isolated development workspace when publishing. Suitable GitHub Copilot access, tenant settings, workspace permissions, licenses, and capacity depend on the selected optional tools and deployment path. DAX Studio, Tabular Editor, and ALM Toolkit are optional tools, subject to organizational approval.
+- **Power BI Desktop:** Use a current release.
+- **Test model:** Use a model without confidential data.
+- **Publishing:** Use an isolated development workspace.
+- **Access and licensing:** GitHub Copilot access, tenant settings, workspace permissions, licenses, and capacity depend on the selected optional tools and deployment path.
+- **Optional tools:** [DAX Studio](https://daxstudio.org/), [Tabular Editor](https://tabulareditor.com/), and [ALM Toolkit](https://github.com/microsoft/Analysis-Services/tree/master/AlmToolkit) are subject to organizational approval.
 
 ## 3.3 Understand PBIP, PBIR, and TMDL
 
@@ -202,26 +205,6 @@ Local Git tracks the project files. [Fabric Git integration](https://learn.micro
 - **Power BI Embedded** — [Embedded analytics documentation](https://learn.microsoft.com/en-us/power-bi/developer/embedded/) — **Documentation hub:** explore embedding Power BI analytics in applications; a related application-development path, not a single hands-on tutorial.
 
 These are related paths, not prerequisites for the report exercises or the separate Fabric Apps chapter.
-
-## 3.12 Optional: One-Day Workshop Plan
-
-This is an optional deep-dive schedule for this chapter, not a requirement for the overall course.
-
-| Time | Focus |
-| --- | --- |
-| 09:00–09:30 | Goals, agentic workflow, and human responsibilities |
-| 09:30–10:15 | Windows tools and PBIP, PBIR, and TMDL |
-| 10:15–10:30 | Break |
-| 10:30–11:30 | Approved integration path, sample project, and Git baseline |
-| 11:30–12:15 | Model inspection, DAX, and TMDL exercises |
-| 12:15–13:00 | Lunch |
-| 13:00–14:15 | Report planning, PBIR authoring, and Desktop review |
-| 14:15–14:30 | Break |
-| 14:30–15:30 | Optional published-data question and quality checks |
-| 15:30–16:15 | Git review and deployment to a test workspace |
-| 16:15–17:00 | Governance, pilot readiness, questions, and wrap-up |
-
-Before the workshop, verify the approved tools and policies, sample data, repository baseline, test identities, expected results, and any required workspace access. If MCP or the Bridge is not approved, prepare the manual alternatives described above.
 
 [Back to contents](#chapter-contents)
 

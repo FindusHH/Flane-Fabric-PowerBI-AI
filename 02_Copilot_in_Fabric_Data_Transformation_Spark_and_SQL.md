@@ -14,6 +14,14 @@
 
 **Link guide:** **Hands-on tutorial** means a guided, step-by-step exercise. ⭐ marks hands-on tutorials, labs, and quickstarts, but not overview pages or code example collections. **Practical code guide** means examples to run in a notebook or SQL editor. **Overview/reference** explains concepts, features, or architecture but is not a complete exercise to follow.
 
+**Hands-on tutorials at a glance**
+
+| Hands-on lab | Section | Approximate duration |
+| --- | --- | --- |
+| ⭐ [Copilot in Dataflow Gen2](https://microsoftlearning.github.io/mslearn-fabric/Instructions/Labs/22a-copilot-fabric-dataflow-gen2.html) | [2.2 Data Preparation and Data Factory Pipelines](#22-data-preparation-and-data-factory-pipelines) | 30 minutes |
+| ⭐ [Copilot in Fabric notebooks](https://microsoftlearning.github.io/mslearn-fabric/Instructions/Labs/22b-copilot-fabric-notebooks.html) | [2.3 Spark Analysis in Fabric Notebooks](#23-spark-analysis-in-fabric-notebooks) | 30 minutes |
+| ⭐ [Copilot in Fabric Data Warehouse](https://microsoftlearning.github.io/mslearn-fabric/Instructions/Labs/22c-copilot-fabric-data-warehouse.html) | [2.4 SQL Analysis in Fabric Data Warehouse](#24-sql-analysis-in-fabric-data-warehouse) | 30 minutes |
+
 **Teaching note:** Begin with an overview of Copilot across Fabric, then explore data preparation, notebook-based Spark analysis, and SQL analysis in a warehouse. The three labs are separate exercises with their own datasets and setup; they are not a single end-to-end pipeline. The Data Factory pipelines guide covers a related workload, while Real-Time Intelligence is an optional extension.
 
 ## 2.1 Copilot in Fabric Overview
