@@ -10,6 +10,12 @@
 - [6.2 Create and Populate an Ontology](#62-create-and-populate-an-ontology)
 - [6.3 Explore and Visualize Ontology Data](#63-explore-and-visualize-ontology-data)
 
+**Key Microsoft Learn references**
+
+- [What Is Ontology (Preview)?](https://learn.microsoft.com/en-us/fabric/iq/ontology/overview)
+- [Generate Ontology (Preview) from Semantic Models](https://learn.microsoft.com/en-us/fabric/iq/ontology/how-to-generate-from-semantic-models)
+- [Agent Integration Options for Ontology (Preview)](https://learn.microsoft.com/en-us/fabric/iq/ontology/concepts-agent-integration)
+
 **Link guide:** **Hands-on tutorial** means a guided, step-by-step exercise. ⭐ marks hands-on tutorials, labs, and quickstarts, but not overview pages or code example collections. **Practical code guide** means examples to run in a notebook or SQL editor. **Overview/reference** explains concepts, features, or architecture but is not a complete exercise to follow.
 
 **Hands-on tutorials at a glance**

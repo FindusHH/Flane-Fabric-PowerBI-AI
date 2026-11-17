@@ -20,9 +20,10 @@
 | Hands-on tutorial | Section | Focus |
 | --- | --- | --- |
 | ⭐ [Copilot in Power BI: End-to-End Tutorial](https://learn.microsoft.com/en-us/power-bi/create-reports/tutorial-copilot-power-bi-introduction) | [1.1 Overview and Orientation](#11-overview-and-orientation) | Follow the tutorial series from preparing a semantic model to exploring insights with Copilot. |
+| ⭐ [Prepare a semantic model for AI](https://microsoftlearning.github.io/mslearn-fabric/Instructions/Labs/30-prepare-model-ai.html) | [1.3 Prepare the Semantic Model for Copilot](#13-prepare-the-semantic-model-for-copilot) | Simplify the AI schema, add instructions, verified answers, and synonyms, then validate Copilot with HCAAT and approve the model (approximately 30 minutes). |
 | ⭐ [Create a report with Copilot using sample financial data](https://learn.microsoft.com/en-us/power-bi/fundamentals/service-get-started#use-copilot-to-create-a-report-in-power-bi) | [1.5 Create and Refine Reports with Copilot](#15-create-and-refine-reports-with-copilot) | Import the Financial Sample data, create report pages with Copilot, and pin visuals to a dashboard. |
 
-**Teaching note:** The linked resources use different datasets: Financial Sample for report creation, Revenue Opportunities for AI-ready model preparation, and an AdventureWorks scenario in the DAX learning unit. Use one primary seminar dataset and adapt prompts, table names, and measures, or clearly announce each dataset switch. The exercises should not be treated as one continuous lab with interchangeable models. The Artificial Intelligence (Contoso) sample is optional enrichment, not a Copilot report-generation exercise.
+**Teaching note:** The linked resources use different datasets: Financial Sample for report creation, Revenue Opportunities for the Copilot tutorial series, Sales Analysis for the AI-readiness lab, and an AdventureWorks scenario in the DAX learning unit. Use one primary seminar dataset and adapt prompts, table names, and measures, or clearly announce each dataset switch. The exercises should not be treated as one continuous lab with interchangeable models. The Artificial Intelligence (Contoso) sample is optional enrichment, not a Copilot report-generation exercise.
 
 ## 1.1 Overview and Orientation
 
@@ -49,6 +50,8 @@
 ## 1.3 Prepare the Semantic Model for Copilot
 
 - **Ask questions about a semantic model** — [Use Copilot with semantic models](https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-semantic-models) — **Feature and workflow guide:** explains model preparation and Copilot experiences; useful context, but not one end-to-end exercise. Use questions to validate how well Copilot understands the prepared model.
+
+- ⭐ **Prepare a semantic model for AI** — [Prepare a semantic model for AI](https://microsoftlearning.github.io/mslearn-fabric/Instructions/Labs/30-prepare-model-ai.html) — **Hands-on lab (approximately 30 minutes):** simplify the AI data schema, add AI instructions and verified answers, add synonyms through Q&A linguistic modeling, test Copilot with HCAAT diagnostics, and mark the model as Approved for Copilot. Requires Power BI Desktop (November 2025 or later) and paid Fabric capacity (F2 or higher); a Fabric trial is not supported. The **Prep data for AI** feature used in the lab is in preview. Related learning unit: [Prepare the semantic layer for AI in Microsoft Fabric](https://learn.microsoft.com/en-us/training/modules/fabric-prepare-semantic-layer/).
 
 ## 1.4 Develop DAX Queries and Measures
 

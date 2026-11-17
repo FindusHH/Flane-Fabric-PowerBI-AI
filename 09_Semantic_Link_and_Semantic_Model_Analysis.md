@@ -10,10 +10,23 @@
 - [9.2 Explore a Semantic Model and Evaluate Measures](#92-explore-a-semantic-model-and-evaluate-measures)
 - [9.3 Analyze Relationships and Validate Data](#93-analyze-relationships-and-validate-data)
 - [9.4 Analyze Models with Ready-made Notebooks and Semantic Link Labs](#94-analyze-models-with-ready-made-notebooks-and-semantic-link-labs)
+- [9.5 Manage the Semantic Model Lifecycle](#95-manage-the-semantic-model-lifecycle)
 
 **Link guide:** **Hands-on tutorial** means a guided, step-by-step exercise. ⭐ marks hands-on tutorials, labs, and quickstarts, but not overview pages or code example collections. **Practical code guide** means examples to run in a notebook or SQL editor. **Overview/reference** explains concepts, features, or architecture but is not a complete exercise to follow.
 
-**Teaching note:** Begin with the overview and an end-to-end notebook, then select focused exercises for measures, relationships, and data quality. The ready-made model-analysis notebooks and Semantic Link Labs examples offer additional practical paths.
+**Hands-on tutorials at a glance**
+
+| Hands-on tutorial | Section | Focus |
+| --- | --- | --- |
+| ⭐ [Explore Semantic Link in an all-in-one notebook](https://github.com/microsoft/fabric-samples/blob/main/features-samples/semantic-link/Semantic%20Link%20all-in-one%20demo.ipynb) | [9.2 Explore a Semantic Model and Evaluate Measures](#92-explore-a-semantic-model-and-evaluate-measures) | Explore a sample semantic model, evaluate measures, run DAX, and examine data quality. |
+| ⭐ [Extract and calculate Power BI measures](https://learn.microsoft.com/en-us/fabric/data-science/tutorial-power-bi-measures) | [9.2 Explore a Semantic Model and Evaluate Measures](#92-explore-a-semantic-model-and-evaluate-measures) | List and evaluate measures from a sample semantic model using SemPy. |
+| ⭐ [Analyze functional dependencies](https://learn.microsoft.com/en-us/fabric/data-science/tutorial-power-bi-dependencies) | [9.3 Analyze Relationships and Validate Data](#93-analyze-relationships-and-validate-data) | Test dependencies between columns and identify data-quality issues using SemPy. |
+| ⭐ [Discover semantic model relationships](https://learn.microsoft.com/en-us/fabric/data-science/tutorial-power-bi-relationships) | [9.3 Analyze Relationships and Validate Data](#93-analyze-relationships-and-validate-data) | Discover relationships between tables and check for relationship violations. |
+| ⭐ [Discover relationships in the Synthea dataset](https://learn.microsoft.com/en-us/fabric/data-science/tutorial-relationships-detection) | [9.3 Analyze Relationships and Validate Data](#93-analyze-relationships-and-validate-data) | Detect and visualize relationships in sample data. |
+| ⭐ [Validate data with SemPy and Great Expectations](https://learn.microsoft.com/en-us/fabric/data-science/tutorial-great-expectations) | [9.3 Analyze Relationships and Validate Data](#93-analyze-relationships-and-validate-data) | Validate semantic model data using SemPy and Great Expectations earlier than version 1.0. |
+| ⭐ [Manage the semantic model lifecycle](https://microsoftlearning.github.io/mslearn-fabric/Instructions/Labs/21b-manage-semantic-model-lifecycle.html) | [9.5 Manage the Semantic Model Lifecycle](#95-manage-the-semantic-model-lifecycle) | Validate a model with SemPy, fix missing relationships, and promote the validated solution through Development and Production stages (approximately 45 minutes). |
+
+**Teaching note:** Begin with the overview and an end-to-end notebook, then select focused exercises for measures, relationships, and data quality. Use the lifecycle lab for a broader **Validate → Fix → Deploy** workflow that includes a deployment pipeline. The ready-made model-analysis notebooks and Semantic Link Labs examples offer additional practical paths.
 
 ## 9.1 Semantic Link Overview and Sample Notebooks
 
@@ -42,6 +55,10 @@
 - **Use notebooks with a semantic model** — [Use notebooks with a semantic model](https://learn.microsoft.com/en-us/power-bi/transform-model/service-notebooks) — **Practical guide:** open ready-made notebooks from a semantic model to run best-practice and memory analysis. Requires suitable workspace access, model permissions, and Fabric capacity.
 
 - **Semantic Link Labs code examples** — [Code Examples](https://github.com/microsoft/semantic-link-labs/wiki/Code-Examples) — **Practical code examples:** use Python notebook snippets for tasks such as model best-practice analysis and memory analysis.
+
+## 9.5 Manage the Semantic Model Lifecycle
+
+- ⭐ **Manage the semantic model lifecycle** — [Manage the semantic model lifecycle](https://microsoftlearning.github.io/mslearn-fabric/Instructions/Labs/21b-manage-semantic-model-lifecycle.html) — **Hands-on lab (approximately 45 minutes):** create sample data, inspect a semantic model and validate data quality with SemPy, fix missing relationships through a read/write TOM connection, then promote the validated solution from Development to Production using a deployment pipeline. Requires Fabric capacity; both pipeline workspaces must be on Fabric or Premium capacity. Review the lab's license and workspace requirements before starting. Related learning path: [Manage the semantic model development lifecycle](https://learn.microsoft.com/en-us/training/modules/manage-semantic-model-lifecycle/).
 
 [Back to contents](#chapter-contents)
 
