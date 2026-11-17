@@ -13,6 +13,15 @@
 
 **Link guide:** **Hands-on tutorial** means a guided, step-by-step exercise. ⭐ marks hands-on tutorials, labs, and quickstarts, but not overview pages or code example collections. **Practical code guide** means examples to run in a notebook or SQL editor. **Overview/reference** explains concepts, features, or architecture but is not a complete exercise to follow.
 
+**Hands-on tutorials at a glance**
+
+| Hands-on tutorial | Section | Focus |
+| --- | --- | --- |
+| ⭐ [Get started with AI Functions in PySpark](https://github.com/microsoft/fabric-samples/blob/main/docs-samples/data-science/ai-functions/starter-notebooks/AIFunctions-PySpark-starter-notebook.ipynb) | [5.2 Use and Customize AI Functions in Notebooks](#52-use-and-customize-ai-functions-in-notebooks) | Apply AI Functions to customer reviews with PySpark, inspect results, and build a dashboard. |
+| ⭐ [Get started with AI Functions in pandas](https://github.com/microsoft/fabric-samples/blob/main/docs-samples/data-science/ai-functions/starter-notebooks/AIFunctions-pandas-starter-notebook.ipynb) | [5.2 Use and Customize AI Functions in Notebooks](#52-use-and-customize-ai-functions-in-notebooks) | Apply AI Functions to customer reviews with pandas, inspect results, and build a dashboard. |
+| ⭐ [Use AI Functions in a Fabric Warehouse](https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-ai-functions) | [5.3 Use AI Functions in Fabric Data Warehouse](#53-use-ai-functions-in-fabric-data-warehouse) | Run guided T-SQL exercises to extract, generate, summarize, and persist AI results. |
+| ⭐ [Use Azure OpenAI for big data with SynapseML](https://learn.microsoft.com/en-us/fabric/data-science/open-ai) | [5.4 Integrate Azure OpenAI in Fabric Notebooks](#54-integrate-azure-openai-in-fabric-notebooks) | Import a notebook and run Spark examples for prompts and embeddings with Azure OpenAI and SynapseML. |
+
 **Teaching note:** Start with the shared AI Functions concepts and prerequisites. Then explore notebook-based use and configuration, followed by the separate SQL experience in Fabric Data Warehouse. Finish with direct Azure OpenAI integrations in notebooks. Distinguish Fabric AI Functions, which provide managed functions for data transformation, from calling Azure OpenAI through SynapseML or the OpenAI Python SDK; these approaches have different setup, configuration, and endpoint requirements.
 
 ## 5.1 Fabric AI Functions: Overview and Setup

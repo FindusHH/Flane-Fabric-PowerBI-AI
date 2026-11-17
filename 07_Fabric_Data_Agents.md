@@ -14,6 +14,14 @@
 
 **Link guide:** **Hands-on tutorial** means a guided, step-by-step exercise. ⭐ marks hands-on tutorials, labs, and quickstarts, but not overview pages or code example collections. **Practical code guide** means examples to run in a notebook or SQL editor. **Overview/reference** explains concepts, features, or architecture but is not a complete exercise to follow.
 
+**Hands-on tutorials at a glance**
+
+| Hands-on tutorial | Section | Focus |
+| --- | --- | --- |
+| ⭐ [Fabric Data Agent with AdventureWorks](https://learn.microsoft.com/en-us/fabric/data-science/data-agent-end-to-end-tutorial) | [7.2 Hands-on Data Agent Scenarios](#72-hands-on-data-agent-scenarios) | Populate a lakehouse with sample data, create a data agent, and ask questions. |
+| ⭐ [Chat with sales data using a Fabric Data Agent](https://microsoftlearning.github.io/mslearn-fabric/Instructions/Labs/22d-copilot-fabric-data-agents.html) | [7.2 Hands-on Data Agent Scenarios](#72-hands-on-data-agent-scenarios) | Create a sales warehouse and data agent, then explore how questions are translated into SQL (approximately 30 minutes). |
+| ⭐ [Build a healthcare Data Agent with an ontology](https://microsoftlearning.github.io/mslearn-fabric/Instructions/Labs/28-build-data-agent-ontology.html) | [7.3 Ground a Data Agent in an Ontology](#73-ground-a-data-agent-in-an-ontology) | Set up a healthcare ontology and configure and test a data agent using the older ontology experience (approximately 30 minutes). |
+
 **Teaching note:** Learn the agent basics, then select a lakehouse or warehouse exercise. Ontology grounding and external integrations are separate paths; the GraphQL MCP guide connects AI agents to Fabric but does not configure a Fabric Data Agent.
 
 ## 7.1 Data Agent Concepts and Setup
