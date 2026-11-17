@@ -14,6 +14,13 @@
 
 **Link guide:** **Hands-on tutorial** means a guided, step-by-step exercise. ⭐ marks hands-on tutorials, labs, and quickstarts, but not overview pages or code example collections. **Practical code guide** means examples to run in a notebook or SQL editor. **Overview/reference** explains concepts, features, or architecture but is not a complete exercise to follow.
 
+**Hands-on tutorials at a glance**
+
+| Hands-on tutorial | Section | Focus |
+| --- | --- | --- |
+| ⭐ [Try industry-specific prebuilt analyzers](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/quickstart/content-understanding-studio) | [4.4 Extract and Validate Content](#44-extract-and-validate-content) | Explore a prebuilt analyzer in Content Understanding Studio, analyze sample or uploaded content, and review the extracted fields. |
+| ⭐ [Create a custom analyzer with confidence and source information](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/tutorial/create-custom-analyzer) | [4.4 Extract and Validate Content](#44-extract-and-validate-content) | Create an analyzer through the API/SDK, submit a document, and inspect extracted fields, confidence estimates, and source information. |
+
 This topic covers AI-generated Power BI narratives and Azure Content Understanding for extracting and validating information from source content. The Content Understanding exercises do not themselves build a Power BI report-commenting solution; integrating their output into reports is a separate task.
 
 ## 4.1 Analyze Power BI Reports with Content Understanding

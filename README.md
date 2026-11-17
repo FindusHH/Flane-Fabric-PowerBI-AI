@@ -37,4 +37,4 @@ This course is intended for learners with experience in Power BI and Microsoft F
 
 ## Version
 
-Agenda version: **1.4.3**
+Agenda version: **1.4.4**

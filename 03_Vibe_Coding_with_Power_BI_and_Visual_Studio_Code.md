@@ -20,6 +20,13 @@
 
 **Link guide:** **Hands-on tutorial** means a guided, step-by-step exercise. ⭐ marks hands-on tutorials, labs, and quickstarts, but not overview pages or code example collections. **Practical code guide** means examples to run in a notebook or SQL editor. **Overview/reference** explains concepts, features, or architecture but is not a complete exercise to follow.
 
+**Hands-on tutorials at a glance**
+
+| Hands-on tutorial | Section | Focus |
+| --- | --- | --- |
+| ⭐ [Microsoft Learn end-to-end Power BI tutorial](https://learn.microsoft.com/en-us/power-bi/create-reports/tutorial-end-to-end-power-bi) | [3.5 Prepare a Project and Plan Changes](#35-prepare-a-project-and-plan-changes) | Build a Power BI solution from raw data through its semantic model and report, then publish and distribute it. |
+| ⭐ [Deploy a Power BI project with fabric-cicd](https://learn.microsoft.com/en-us/power-bi/developer/projects/projects-deploy-fabric-cicd) | [3.10 Review and Deploy Changes](#310-review-and-deploy-changes) | Prepare a PBIP project and deploy it to a Fabric workspace using the fabric-cicd Python library. |
+
 **Teaching note:** This chapter integrates the Windows training material into one development path. First understand the tools and project formats, then prepare a baseline, work on the model, build the report, validate, and deploy. AI agents, MCP, and published-data queries are optional extensions. The separate [Fabric Apps with Rayfin](./10_Fabric_Apps_with_Rayfin.md) chapter builds applications rather than PBIR reports.
 
 ## 3.1 Learning Goals and Workflow

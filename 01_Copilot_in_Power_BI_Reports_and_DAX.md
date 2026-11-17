@@ -15,6 +15,13 @@
 
 **Link guide:** **Hands-on tutorial** means a guided, step-by-step exercise. ⭐ marks hands-on tutorials, labs, and quickstarts, but not overview pages or code example collections. **Practical code guide** means examples to run in a notebook or SQL editor. **Overview/reference** explains concepts, features, or architecture but is not a complete exercise to follow.
 
+**Hands-on tutorials at a glance**
+
+| Hands-on tutorial | Section | Focus |
+| --- | --- | --- |
+| ⭐ [Copilot in Power BI: End-to-End Tutorial](https://learn.microsoft.com/en-us/power-bi/create-reports/tutorial-copilot-power-bi-introduction) | [1.1 Overview and Orientation](#11-overview-and-orientation) | Follow the tutorial series from preparing a semantic model to exploring insights with Copilot. |
+| ⭐ [Create a report with Copilot using sample financial data](https://learn.microsoft.com/en-us/power-bi/fundamentals/service-get-started#use-copilot-to-create-a-report-in-power-bi) | [1.5 Create and Refine Reports with Copilot](#15-create-and-refine-reports-with-copilot) | Import the Financial Sample data, create report pages with Copilot, and pin visuals to a dashboard. |
+
 **Teaching note:** The linked resources use different datasets: Financial Sample for report creation, Revenue Opportunities for AI-ready model preparation, and an AdventureWorks scenario in the DAX learning unit. Use one primary seminar dataset and adapt prompts, table names, and measures, or clearly announce each dataset switch. The exercises should not be treated as one continuous lab with interchangeable models. The Artificial Intelligence (Contoso) sample is optional enrichment, not a Copilot report-generation exercise.
 
 ## 1.1 Overview and Orientation
