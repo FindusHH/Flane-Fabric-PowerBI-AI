@@ -18,7 +18,7 @@
 
 | Hands-on tutorial | Section | Focus |
 | --- | --- | --- |
-| ⭐ [Try industry-specific prebuilt analyzers](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/quickstart/content-understanding-studio) | [4.4 Extract and Validate Content](#44-extract-and-validate-content) | Explore a prebuilt analyzer in Content Understanding Studio, analyze sample or uploaded content, and review the extracted fields. |
+| ⭐ [Try industry-specific prebuilt analyzers](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/quickstart/content-understanding-studio) | [4.4 Extract and Validate Content](#44-extract-and-validate-content) | Explore a prebuilt analyzer in Content Understanding Studio or Microsoft Foundry, analyze sample or uploaded content, and review the extracted fields. |
 | ⭐ [Create a custom analyzer with confidence and source information](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/tutorial/create-custom-analyzer) | [4.4 Extract and Validate Content](#44-extract-and-validate-content) | Create an analyzer through the API/SDK, submit a document, and inspect extracted fields, confidence estimates, and source information. |
 
 This topic covers AI-generated Power BI narratives and Azure Content Understanding for extracting and validating information from source content. The Content Understanding exercises do not themselves build a Power BI report-commenting solution; integrating their output into reports is a separate task.
@@ -49,7 +49,13 @@ Potential industry scenarios include tax preparation, procurement documents, con
 
 ## 4.4 Extract and Validate Content
 
-- ⭐ **Try industry-specific prebuilt analyzers** — [Quickstart: Try Content Understanding Studio or Microsoft Foundry](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/quickstart/content-understanding-studio) — **Hands-on Studio quickstart:** select a prebuilt analyzer for your scenario, analyze sample or uploaded content, and review extracted fields. Use Studio to explore the available domain-specific analyzers.
+- ⭐ **Try industry-specific prebuilt analyzers** — [Quickstart: Try Content Understanding Studio or Microsoft Foundry](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/quickstart/content-understanding-studio) — **Hands-on quickstart:** select a prebuilt analyzer for your scenario, analyze sample or uploaded content, and review extracted fields. Explore the available analyzers in Content Understanding Studio or Microsoft Foundry.
+
+  **IMPORTANT: Training environment updates:**
+
+  - In the tutorial, select the **Microsoft Foundry (new)** tab.
+  - In the Foundry portal, use **Services** instead of **AI Services** to open the **Content Understanding Playground**.
+  - If asked to configure model defaults, try a chat-completion deployment of `gpt-5-mini` or `gpt-5.2`, depending on availability in your training environment. Configure any separately required embedding model as well; see [supported generative models](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/service-limits#supported-generative-models).
 
 - **Create and improve a custom analyzer in Studio** — [Create and improve your custom analyzer in Content Understanding Studio](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/how-to/customize-analyzer-content-understanding-studio) — **Step-by-step UI guide:** upload sample content, select a template, refine suggested fields, test the schema, and build an analyzer. Optionally use labeled document examples to improve extraction quality.
 
