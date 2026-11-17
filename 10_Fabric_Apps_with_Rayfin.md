@@ -11,13 +11,24 @@
 
 **Link guide:** **Hands-on tutorial** means a guided, step-by-step exercise. ⭐ marks hands-on tutorials, labs, and quickstarts, but not overview pages or code example collections. **Practical code guide** means examples to run in a notebook or SQL editor. **Overview/reference** explains concepts, features, or architecture but is not a complete exercise to follow.
 
-**Teaching note:** Start with Rayfin's guidance and examples, then scaffold a first app before building a Copilot-assisted app connected to a semantic model. The app exercises build applications, not PBIR reports.
+**Hands-on tutorials at a glance**
+
+| Hands-on tutorial | Section | Focus |
+| --- | --- | --- |
+| ⭐ [Create your first Fabric app](https://learn.microsoft.com/en-us/fabric/apps/create-app) | [10.2 Build Fabric Apps: From Quickstart to GitHub Copilot](#102-build-fabric-apps-from-quickstart-to-github-copilot) | Scaffold an app with Rayfin tooling, deploy its backend to Fabric, and run the frontend locally. |
+| ⭐ [Create a semantic model app with GitHub Copilot](https://learn.microsoft.com/en-us/fabric/apps/create-app-with-github-copilot) | [10.2 Build Fabric Apps: From Quickstart to GitHub Copilot](#102-build-fabric-apps-from-quickstart-to-github-copilot) | Use GitHub Copilot in VS Code to build and deploy an analytical app connected to a Fabric semantic model. |
+
+**Teaching note:** Start with the Fabric Apps overview, the Rayfin website, and the example collections, then scaffold a first app before building a Copilot-assisted app connected to a semantic model. The app exercises build applications, not PBIR reports.
 
 ## 10.1 Rayfin Overview and Ready-to-Run Examples
 
-- **Rayfin** — [Rayfin](https://rayfin.ai/) — **External product website:** related reference for the Rayfin-based Fabric apps workflow below; not a guided exercise. The website could not be retrieved during this review.
+- **Fabric Apps overview** — [What are Fabric Apps?](https://learn.microsoft.com/en-us/fabric/apps/overview) — **Overview/reference:** explains how Fabric Apps, built on the Rayfin SDK, turn TypeScript data models into generated APIs with authentication, hosting, Fabric data connectors, and file storage. Also covers supported regions and licensing/workspace prerequisites.
 
-- **Rayfin guidance and ready-to-run examples** — [awesome-rayfin (FindusHH)](https://github.com/FindusHH/awesome-rayfin) — **Curated examples and reference collection:** covers Rayfin in depth and is based on [Microsoft's awesome-rayfin repository](https://github.com/microsoft/awesome-rayfin). It contains only a subset of the upstream collection, but the included examples have been updated to be ready to run. Follow each example's documented setup instructions and prerequisites.
+- **Rayfin** — [Rayfin](https://rayfin.ai/) — **Product website and documentation:** introduces Rayfin as a TypeScript backend platform that deploys to Microsoft Fabric, with a CLI quickstart, agent-ready setup instructions, and reference documentation. Not a guided exercise.
+
+- **Microsoft awesome-rayfin** — [awesome-rayfin (Microsoft)](https://github.com/microsoft/awesome-rayfin) — **Curated examples and reference collection:** the original Microsoft collection of Rayfin resources and examples.
+
+- **Updated ready-to-run examples** — [awesome-rayfin (FindusHH)](https://github.com/FindusHH/awesome-rayfin) — **Curated examples and reference collection:** based on the Microsoft repository above; contains only a subset of the upstream collection, but the included examples have been updated to be ready to run. Follow each example's documented setup instructions and prerequisites.
 
 ## 10.2 Build Fabric Apps: From Quickstart to GitHub Copilot
 
