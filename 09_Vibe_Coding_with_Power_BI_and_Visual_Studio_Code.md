@@ -105,9 +105,9 @@ The indentation expresses the relationship between the table, measure, and forma
 
 **Status and safety:** Microsoft Learn, checked November 16, 2026, documents PBIP and PBIR as generally available, while detecting and reloading external PBIP changes is in preview. Desktop TMDL view is generally available; the web TMDL view is in preview. Check the linked documentation for current status and limitations. Project files contain metadata, not necessarily all underlying data; report filters and model definitions can nevertheless contain sensitive values or connection information.
 
-> **📘 Practical companion guide: [Work with PBIP Files](./Work%20with%20PBIP-Files.md)**
->
-> Use this step-by-step guide for hands-on PBIP editing in Visual Studio Code, with a recommended workflow and example changes.
+| **📘 PRACTICAL PBIP GUIDE** |
+| --- |
+| **[Work with PBIP Files](./Work%20with%20PBIP-Files.md)**<br>Recommended companion for hands-on PBIP editing in Visual Studio Code.<br><br>**Includes:** which files to edit or leave to Power BI Desktop, how to apply and validate external changes, and three small example edits. |
 
 ## 9.4 Select Agent Tools and an MCP Policy
 
