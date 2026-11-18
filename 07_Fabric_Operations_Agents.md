@@ -15,11 +15,11 @@
 
 ## 7.1 Create and Configure an Operations Agent
 
-- **Create a Fabric Operations Agent** — [Create and configure operations agents](https://learn.microsoft.com/en-us/fabric/real-time-intelligence/operations-agent) — **Step-by-step how-to:** configure an agent to monitor data, generate a playbook, and recommend actions. Requires non-trial Fabric capacity, a data source, Microsoft Teams, and enabled tenant settings.
+- **Create a Fabric Operations Agent** — <a href="https://learn.microsoft.com/en-us/fabric/real-time-intelligence/operations-agent" target="_blank" rel="noopener noreferrer">Create and configure operations agents</a> — **Step-by-step how-to:** configure an agent to monitor data, generate a playbook, and recommend actions. Requires non-trial Fabric capacity, a data source, Microsoft Teams, and enabled tenant settings.
 
 ## 7.2 Ground an Operations Agent in an Ontology
 
-- **Connect an Operations Agent to an ontology** — [Create an operations agent grounded in an ontology](https://learn.microsoft.com/en-us/fabric/iq/ontology/how-to-create-operations-agent) — **Step-by-step how-to (preview):** use an ontology as the agent's knowledge source, configure monitoring, and receive recommendations in Teams. Currently, ontologies bound to semantic models are not supported by this integration.
+- **Connect an Operations Agent to an ontology** — <a href="https://learn.microsoft.com/en-us/fabric/iq/ontology/how-to-create-operations-agent" target="_blank" rel="noopener noreferrer">Create an operations agent grounded in an ontology</a> — **Step-by-step how-to (preview):** use an ontology as the agent's knowledge source, configure monitoring, and receive recommendations in Teams. Currently, ontologies bound to semantic models are not supported by this integration.
 
 [Back to contents](#chapter-contents)
 

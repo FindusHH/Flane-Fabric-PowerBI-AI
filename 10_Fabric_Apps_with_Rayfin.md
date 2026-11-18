@@ -15,14 +15,14 @@
 
 | Hands-on tutorial | Section | Focus |
 | --- | --- | --- |
-| ⭐ [Create your first Fabric app](https://learn.microsoft.com/en-us/fabric/apps/create-app) | [10.2 Build Fabric Apps: From Quickstart to GitHub Copilot](#102-build-fabric-apps-from-quickstart-to-github-copilot) | Scaffold an app with Rayfin tooling, deploy its backend to Fabric, and run the frontend locally. |
-| ⭐ [Create a semantic model app with GitHub Copilot](https://learn.microsoft.com/en-us/fabric/apps/create-app-with-github-copilot) | [10.2 Build Fabric Apps: From Quickstart to GitHub Copilot](#102-build-fabric-apps-from-quickstart-to-github-copilot) | Use GitHub Copilot in VS Code to build and deploy an analytical app connected to a Fabric semantic model. |
+| ⭐ <a href="https://learn.microsoft.com/en-us/fabric/apps/create-app" target="_blank" rel="noopener noreferrer">Create your first Fabric app</a> | [10.2 Build Fabric Apps: From Quickstart to GitHub Copilot](#102-build-fabric-apps-from-quickstart-to-github-copilot) | Scaffold an app with Rayfin tooling, deploy its backend to Fabric, and run the frontend locally. |
+| ⭐ <a href="https://learn.microsoft.com/en-us/fabric/apps/create-app-with-github-copilot" target="_blank" rel="noopener noreferrer">Create a semantic model app with GitHub Copilot</a> | [10.2 Build Fabric Apps: From Quickstart to GitHub Copilot](#102-build-fabric-apps-from-quickstart-to-github-copilot) | Use GitHub Copilot in VS Code to build and deploy an analytical app connected to a Fabric semantic model. |
 
 **Teaching note:** Start with the Fabric Apps overview, the Rayfin website, and the example collections, then scaffold a first app before building a Copilot-assisted app connected to a semantic model. The app exercises build applications, not PBIR reports.
 
 ## 10.1 Rayfin Overview and Ready-to-Run Examples
 
-- **Fabric Apps overview** — [What are Fabric Apps?](https://learn.microsoft.com/en-us/fabric/apps/overview) — **Overview/reference:** explains how Fabric Apps, built on the Rayfin SDK, turn TypeScript data models into generated APIs with authentication, hosting, Fabric data connectors, and file storage. Also covers supported regions and licensing/workspace prerequisites.
+- **Fabric Apps overview** — <a href="https://learn.microsoft.com/en-us/fabric/apps/overview" target="_blank" rel="noopener noreferrer">What are Fabric Apps?</a> — **Overview/reference:** explains how Fabric Apps, built on the Rayfin SDK, turn TypeScript data models into generated APIs with authentication, hosting, Fabric data connectors, and file storage. Also covers supported regions and licensing/workspace prerequisites.
 
 - **Rayfin** — [Rayfin](https://rayfin.ai/) — **Product website and documentation:** introduces Rayfin as a TypeScript backend platform that deploys to Microsoft Fabric, with a CLI quickstart, agent-ready setup instructions, and reference documentation. Not a guided exercise.
 
@@ -32,9 +32,9 @@
 
 ## 10.2 Build Fabric Apps: From Quickstart to GitHub Copilot
 
-- ⭐ **Create your first Fabric app** — [Create your first Fabric apps project](https://learn.microsoft.com/en-us/fabric/apps/create-app) — **Hands-on quickstart (preview):** scaffold an app with the Rayfin tooling, deploy its backend to Fabric, and run the frontend locally. Requires Node.js 20 or later, suitable workspace permissions, and the Fabric apps tenant setting.
+- ⭐ **Create your first Fabric app** — <a href="https://learn.microsoft.com/en-us/fabric/apps/create-app" target="_blank" rel="noopener noreferrer">Create your first Fabric apps project</a> — **Hands-on quickstart (preview):** scaffold an app with the Rayfin tooling, deploy its backend to Fabric, and run the frontend locally. Requires Node.js 20 or later, suitable workspace permissions, and the Fabric apps tenant setting.
 
-- ⭐ **Create a semantic model app with GitHub Copilot** — [Create a semantic model app with GitHub Copilot](https://learn.microsoft.com/en-us/fabric/apps/create-app-with-github-copilot) — **Hands-on tutorial:** use GitHub Copilot agent mode in VS Code to scaffold an analytical app, connect a Fabric semantic model, generate DAX and visualizations, validate changes, and deploy to Fabric. This builds an app connected to a semantic model rather than a PBIR report.
+- ⭐ **Create a semantic model app with GitHub Copilot** — <a href="https://learn.microsoft.com/en-us/fabric/apps/create-app-with-github-copilot" target="_blank" rel="noopener noreferrer">Create a semantic model app with GitHub Copilot</a> — **Hands-on tutorial:** use GitHub Copilot agent mode in VS Code to scaffold an analytical app, connect a Fabric semantic model, generate DAX and visualizations, validate changes, and deploy to Fabric. This builds an app connected to a semantic model rather than a PBIR report.
 
 [Back to contents](#chapter-contents)
 

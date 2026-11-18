@@ -30,6 +30,7 @@ The chapters cover:
 - Use the chapter's contents list to navigate its sections.
 - Follow the linked Microsoft Learn materials and other resources.
 - ⭐ marks hands-on tutorials, labs, and quickstarts.
+- Microsoft Learn and hands-on tutorial links are configured to open in a new tab when the Markdown viewer supports HTML link attributes. GitHub removes these attributes; use the browser's "open link in new tab" action there.
 
 ## Prerequisites
 
@@ -37,4 +38,4 @@ This course is intended for learners with experience in Power BI and Microsoft F
 
 ## Version
 
-Agenda version: **1.4.7**
+Agenda version: **1.4.8**
