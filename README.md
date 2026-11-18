@@ -12,13 +12,13 @@ The chapters cover:
 
 1. Copilot in Power BI: Reports and DAX
 2. Copilot in Fabric: Data Transformation, Spark, and SQL
-3. Vibe Coding with Power BI and Visual Studio Code
-4. GenAI-based Report Commenting
-5. Fabric AI Functions and Azure OpenAI
-6. Fabric IQ and Ontology
-7. Fabric Data Agents
-8. Fabric Operations Agents
-9. Semantic Link and Semantic Model Analysis
+3. GenAI-based Report Commenting
+4. Fabric AI Functions and Azure OpenAI
+5. Fabric IQ and Ontology
+6. Fabric Data Agents
+7. Fabric Operations Agents
+8. Semantic Link and Semantic Model Analysis
+9. Vibe Coding with Power BI and Visual Studio Code
 10. Fabric Apps with Rayfin
 11. Retrieval-Augmented Generation (RAG)
 12. Customer Use Cases and Proofs of Concept

@@ -1,4 +1,4 @@
-# 4. GenAI-based Report-Commenting
+# 3. GenAI-based Report-Commenting
 
 [Back to agenda](./00_Agenda%20with%20Tutorials.md)
 
@@ -6,11 +6,11 @@
 
 **Contents**
 
-- [4.1 Analyze Power BI Reports with Content Understanding](#41-analyze-power-bi-reports-with-content-understanding)
-- [4.2 Content Understanding: Background and Quality](#42-content-understanding-background-and-quality)
-- [4.3 Generate Narratives in Power BI](#43-generate-narratives-in-power-bi)
-- [4.4 Extract and Validate Content](#44-extract-and-validate-content)
-- [4.5 Related Foundry Tools in Fabric](#45-related-foundry-tools-in-fabric)
+- [3.1 Analyze Power BI Reports with Content Understanding](#31-analyze-power-bi-reports-with-content-understanding)
+- [3.2 Content Understanding: Background and Quality](#32-content-understanding-background-and-quality)
+- [3.3 Generate Narratives in Power BI](#33-generate-narratives-in-power-bi)
+- [3.4 Extract and Validate Content](#34-extract-and-validate-content)
+- [3.5 Related Foundry Tools in Fabric](#35-related-foundry-tools-in-fabric)
 
 **Link guide:** **Hands-on tutorial** means a guided, step-by-step exercise. ⭐ marks hands-on tutorials, labs, and quickstarts, but not overview pages or code example collections. **Practical code guide** means examples to run in a notebook or SQL editor. **Overview/reference** explains concepts, features, or architecture but is not a complete exercise to follow.
 
@@ -18,12 +18,12 @@
 
 | Hands-on tutorial | Section | Focus |
 | --- | --- | --- |
-| ⭐ [Try industry-specific prebuilt analyzers](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/quickstart/content-understanding-studio) | [4.4 Extract and Validate Content](#44-extract-and-validate-content) | Explore a prebuilt analyzer in Content Understanding Studio or Microsoft Foundry, analyze sample or uploaded content, and review the extracted fields. |
-| ⭐ [Create a custom analyzer with confidence and source information](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/tutorial/create-custom-analyzer) | [4.4 Extract and Validate Content](#44-extract-and-validate-content) | Create an analyzer through the API/SDK, submit a document, and inspect extracted fields, confidence estimates, and source information. |
+| ⭐ [Try industry-specific prebuilt analyzers](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/quickstart/content-understanding-studio) | [3.4 Extract and Validate Content](#34-extract-and-validate-content) | Explore a prebuilt analyzer in Content Understanding Studio or Microsoft Foundry, analyze sample or uploaded content, and review the extracted fields. |
+| ⭐ [Create a custom analyzer with confidence and source information](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/tutorial/create-custom-analyzer) | [3.4 Extract and Validate Content](#34-extract-and-validate-content) | Create an analyzer through the API/SDK, submit a document, and inspect extracted fields, confidence estimates, and source information. |
 
 This topic covers AI-generated Power BI narratives and Azure Content Understanding for extracting and validating information from source content. The Content Understanding exercises do not themselves build a Power BI report-commenting solution; integrating their output into reports is a separate task.
 
-## 4.1 Analyze Power BI Reports with Content Understanding
+## 3.1 Analyze Power BI Reports with Content Understanding
 
 Content Understanding does not natively analyze PBIX files or connect to interactive Power BI reports and their semantic models. It can analyze supported exports, such as PDFs or screenshots, to extract and interpret visible text, tables, and chart content. These exports represent a specific report state: DAX logic, model relationships, non-visible data, and interactive filtering are not available. Verify extracted numbers and chart interpretations; confidence scores do not establish that a business interpretation is correct. See [Supported input file types and limits](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/service-limits#input-file-limits).
 
@@ -35,19 +35,19 @@ For this workshop, distinguish three use cases:
 
 - **Inspect semantic models programmatically:** use Semantic Link/SemPy, covered under Semantic Link and Semantic Model Analysis.
 
-## 4.2 Content Understanding: Background and Quality
+## 3.2 Content Understanding: Background and Quality
 
 Content Understanding uses multiple AI models to analyze and cross-validate content. Confidence scores and grounding help assess extracted values and trace them to source documents; they do not guarantee correctness. The exercises below cover custom schemas, labeled examples, document classification, and scenario-specific prebuilt analyzers.
 
 Potential industry scenarios include tax preparation, procurement documents, contract analysis, call center analytics, and media analysis. Check the available prebuilt analyzers for the selected scenario and region.
 
-## 4.3 Generate Narratives in Power BI
+## 3.3 Generate Narratives in Power BI
 
 - **AI-generated report commentary in Power BI** — [Create a narrative visual with Copilot for Power BI](https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-create-narrative) — **Step-by-step how-to:** generate a narrative for a report, page, or selected visuals and refine it with prompts. Requires enabled Copilot and supported paid Fabric capacity.
 
 - **Smart narrative summaries** — [Create smart narrative summaries](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-smart-narrative) — **Feature guide:** create and customize smart narrative summaries in Power BI; this is a related option distinct from the Copilot narrative guide.
 
-## 4.4 Extract and Validate Content
+## 3.4 Extract and Validate Content
 
 - ⭐ **Try industry-specific prebuilt analyzers** — [Quickstart: Try Content Understanding Studio or Microsoft Foundry](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/quickstart/content-understanding-studio) — **Hands-on quickstart:** select a prebuilt analyzer for your scenario, analyze sample or uploaded content, and review extracted fields. Explore the available analyzers in Content Understanding Studio or Microsoft Foundry.
 
@@ -67,7 +67,7 @@ Potential industry scenarios include tax preparation, procurement documents, con
 
 **Content Understanding prerequisites:** an Azure subscription, a Microsoft Foundry resource in a supported region, and the required model deployments/configuration. Follow each guide's setup instructions; Azure resource and model usage can incur costs.
 
-## 4.5 Related Foundry Tools in Fabric
+## 3.5 Related Foundry Tools in Fabric
 
 The following links cover related Azure AI services and Fabric workflows; they are not Content Understanding tutorials or a complete report-commenting solution.
 

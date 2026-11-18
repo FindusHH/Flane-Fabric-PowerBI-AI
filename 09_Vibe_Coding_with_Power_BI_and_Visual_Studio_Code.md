@@ -1,4 +1,4 @@
-# 3. Vibe Coding with Power BI and Visual Studio Code
+# 9. Vibe Coding with Power BI and Visual Studio Code
 
 [Back to agenda](./00_Agenda%20with%20Tutorials.md)
 
@@ -6,17 +6,17 @@
 
 **Contents**
 
-- [3.1 Learning Goals and Workflow](#31-learning-goals-and-workflow)
-- [3.2 Choose the Windows Development Environment](#32-choose-the-windows-development-environment)
-- [3.3 Understand PBIP, PBIR, and TMDL](#33-understand-pbip-pbir-and-tmdl)
-- [3.4 Select Agent Tools and an MCP Policy](#34-select-agent-tools-and-an-mcp-policy)
-- [3.5 Prepare a Project and Plan Changes](#35-prepare-a-project-and-plan-changes)
-- [3.6 Develop and Test the Semantic Model](#36-develop-and-test-the-semantic-model)
-- [3.7 Design and Validate a PBIR Report](#37-design-and-validate-a-pbir-report)
-- [3.8 Query a Published Model (Optional)](#38-query-a-published-model-optional)
-- [3.9 Quality, Security, and Governance](#39-quality-security-and-governance)
-- [3.10 Review and Deploy Changes](#310-review-and-deploy-changes)
-- [3.11 Optional: Notebook Authoring and Embedded Analytics](#311-optional-notebook-authoring-and-embedded-analytics)
+- [9.1 Learning Goals and Workflow](#91-learning-goals-and-workflow)
+- [9.2 Choose the Windows Development Environment](#92-choose-the-windows-development-environment)
+- [9.3 Understand PBIP, PBIR, and TMDL](#93-understand-pbip-pbir-and-tmdl)
+- [9.4 Select Agent Tools and an MCP Policy](#94-select-agent-tools-and-an-mcp-policy)
+- [9.5 Prepare a Project and Plan Changes](#95-prepare-a-project-and-plan-changes)
+- [9.6 Develop and Test the Semantic Model](#96-develop-and-test-the-semantic-model)
+- [9.7 Design and Validate a PBIR Report](#97-design-and-validate-a-pbir-report)
+- [9.8 Query a Published Model (Optional)](#98-query-a-published-model-optional)
+- [9.9 Quality, Security, and Governance](#99-quality-security-and-governance)
+- [9.10 Review and Deploy Changes](#910-review-and-deploy-changes)
+- [9.11 Optional: Notebook Authoring and Embedded Analytics](#911-optional-notebook-authoring-and-embedded-analytics)
 
 **Link guide:** **Hands-on tutorial** means a guided, step-by-step exercise. ⭐ marks hands-on tutorials, labs, and quickstarts, but not overview pages or code example collections. **Practical code guide** means examples to run in a notebook or SQL editor. **Overview/reference** explains concepts, features, or architecture but is not a complete exercise to follow.
 
@@ -24,12 +24,12 @@
 
 | Hands-on tutorial | Section | Focus |
 | --- | --- | --- |
-| ⭐ [Microsoft Learn end-to-end Power BI tutorial](https://learn.microsoft.com/en-us/power-bi/create-reports/tutorial-end-to-end-power-bi) | [3.5 Prepare a Project and Plan Changes](#35-prepare-a-project-and-plan-changes) | Build a Power BI solution from raw data through its semantic model and report, then publish and distribute it. |
-| ⭐ [Deploy a Power BI project with fabric-cicd](https://learn.microsoft.com/en-us/power-bi/developer/projects/projects-deploy-fabric-cicd) | [3.10 Review and Deploy Changes](#310-review-and-deploy-changes) | Prepare a PBIP project and deploy it to a Fabric workspace using the fabric-cicd Python library. |
+| ⭐ [Microsoft Learn end-to-end Power BI tutorial](https://learn.microsoft.com/en-us/power-bi/create-reports/tutorial-end-to-end-power-bi) | [9.5 Prepare a Project and Plan Changes](#95-prepare-a-project-and-plan-changes) | Build a Power BI solution from raw data through its semantic model and report, then publish and distribute it. |
+| ⭐ [Deploy a Power BI project with fabric-cicd](https://learn.microsoft.com/en-us/power-bi/developer/projects/projects-deploy-fabric-cicd) | [9.10 Review and Deploy Changes](#910-review-and-deploy-changes) | Prepare a PBIP project and deploy it to a Fabric workspace using the fabric-cicd Python library. |
 
 **Teaching note:** This chapter integrates the Windows training material into one development path. First understand the tools and project formats, then prepare a baseline, work on the model, build the report, validate, and deploy. AI agents, MCP, and published-data queries are optional extensions. The separate [Fabric Apps with Rayfin](./10_Fabric_Apps_with_Rayfin.md) chapter builds applications rather than PBIR reports.
 
-## 3.1 Learning Goals and Workflow
+## 9.1 Learning Goals and Workflow
 
 Here, **vibe coding** means describing a goal in natural language and using an AI coding assistant to propose or make reviewable changes to a Power BI project. It is a workshop term, not the name of a Power BI product. The developer remains responsible for business rules, permissions, testing, and approval.
 
@@ -41,9 +41,9 @@ Participants should be able to:
 - test DAX results and visually review the report before approving changes; and
 - review a Git diff and deploy to a nonproduction Fabric workspace in a controlled way.
 
-The teaching sequence is **requirements → baseline → model inspection → plan → model and DAX → report → validation → review and deployment**. It follows the data-to-model-to-report-to-publishing progression in the Microsoft Learn tutorial in section 3.5, with additional version-control and approval gates. GitHub Copilot in VS Code is a coding assistant; Copilot in Power BI is a separate product experience with its own prerequisites. See [Chapter 1](./01_Copilot_in_Power_BI_Reports_and_DAX.md) for the latter.
+The teaching sequence is **requirements → baseline → model inspection → plan → model and DAX → report → validation → review and deployment**. It follows the data-to-model-to-report-to-publishing progression in the Microsoft Learn tutorial in section 9.5, with additional version-control and approval gates. GitHub Copilot in VS Code is a coding assistant; Copilot in Power BI is a separate product experience with its own prerequisites. See [Chapter 1](./01_Copilot_in_Power_BI_Reports_and_DAX.md) for the latter.
 
-## 3.2 Choose the Windows Development Environment
+## 9.2 Choose the Windows Development Environment
 
 | Tool | Role in this workshop |
 | --- | --- |
@@ -59,7 +59,7 @@ The teaching sequence is **requirements → baseline → model inspection → pl
 - **Access and licensing:** GitHub Copilot access, tenant settings, workspace permissions, licenses, and capacity depend on the selected optional tools and deployment path.
 - **Optional tools:** [DAX Studio](https://daxstudio.org/), [Tabular Editor](https://tabulareditor.com/), and [ALM Toolkit](https://github.com/microsoft/Analysis-Services/tree/master/AlmToolkit) are subject to organizational approval.
 
-## 3.3 Understand PBIP, PBIR, and TMDL
+## 9.3 Understand PBIP, PBIR, and TMDL
 
 | Artifact | What it represents | Why it matters |
 | --- | --- | --- |
@@ -105,7 +105,7 @@ The indentation expresses the relationship between the table, measure, and forma
 
 **Status and safety:** Microsoft Learn, checked November 16, 2026, documents PBIP and PBIR as generally available, while detecting and reloading external PBIP changes is in preview. Desktop TMDL view is generally available; the web TMDL view is in preview. Check the linked documentation for current status and limitations. Project files contain metadata, not necessarily all underlying data; report filters and model definitions can nevertheless contain sensitive values or connection information.
 
-## 3.4 Select Agent Tools and an MCP Policy
+## 9.4 Select Agent Tools and an MCP Policy
 
 [Power BI Agentic](https://learn.microsoft.com/en-us/power-bi/developer/agentic/power-bi-agentic-overview) combines **skills** that guide an agent with **tools** that let it inspect or change Power BI artifacts. These are optional; approve the agent, tools, data flows, and permitted operations before installation.
 
@@ -129,14 +129,14 @@ After installation, use `/skills` in Copilot CLI to verify that the expected ski
 
 **Without MCP:** an approved agent can inspect and, if policy permits, edit scoped project files; otherwise it only proposes changes. A person reviews and applies changes in Power BI Desktop or another approved interface, runs DAX tests, and reviews reports. Distinguish proposed code, static validation, and tests actually executed. A ban on MCP does not automatically answer whether the separate Desktop Bridge, scripts, XMLA, or APIs are allowed—obtain approval for each relevant interface.
 
-## 3.5 Prepare a Project and Plan Changes
+## 9.5 Prepare a Project and Plan Changes
 
 - ⭐ **Microsoft Learn end-to-end Power BI tutorial** — [From raw data to a shared Power BI app](https://learn.microsoft.com/en-us/power-bi/create-reports/tutorial-end-to-end-power-bi) — **Hands-on tutorial:** acquire and transform data, build a semantic model and report, then publish and distribute a Power BI app. It includes a TMDL fast path and an optional Copilot/MCP path. Follow the article's version, account, license, workspace-role, and tenant-setting prerequisites; the Power BI app is not a Fabric app.
 
 For this workshop, start from phases 1–3 of that tutorial or a suitable prepared model from the [sample files in Chapter 1](./01_Copilot_in_Power_BI_Reports_and_DAX.md#12-sample-data-and-exercise-setup). These samples have different schemas; inspect the actual tables and adapt all examples instead of assuming they are interchangeable.
 
 1. Define the audience, business questions, KPI and date logic, security requirements, and measurable expected results.
-2. Save the working PBIX as a Power BI Project. Inspect whether the report uses PBIR and the model uses TMDL; use the relevant format guidance in section 3.3.
+2. Save the working PBIX as a Power BI Project. Inspect whether the report uses PBIR and the model uses TMDL; use the relevant format guidance in section 9.3.
 3. Before committing, review the project contents and `.gitignore` for sensitive information. When no `.gitignore` exists in the chosen folder or parent repository, Power BI Desktop creates one that excludes `.pbi/localSettings.json` and `.pbi/cache.abf`; these defaults do not guarantee that all sensitive information is excluded. Open the project folder in VS Code, initialize Git or use an approved repository, commit a clean baseline, and create a feature branch. See [Power BI projects Git integration](https://learn.microsoft.com/en-us/power-bi/developer/projects/projects-git).
 4. Inspect the existing model before requesting edits: table granularity, relationships and filter direction, measures, date table, roles, and data sources. Identify what is missing and what must not change.
 5. Request a plan and test cases; approve the scope before the agent writes files or invokes write tools.
@@ -152,11 +152,11 @@ Do not edit files, change security or data sources, or run write operations.
 State what you could not verify and wait for approval.
 ```
 
-## 3.6 Develop and Test the Semantic Model
+## 9.6 Develop and Test the Semantic Model
 
 **Exercise 1 — measures and DAX.** Using the approved plan, create or propose measures for sales, previous-year sales, and year-over-year percentage. Use the actual model's names and date logic; request meaningful descriptions, format strings, and safe division. With an approved authoring MCP server, an agent can make and test the changes. Without it, review and apply the proposed changes in Desktop and run the queries yourself.
 
-Check the grand total, a filtered month or region, and a year with no prior-year data against independently known values. A syntactically valid query does not prove that a KPI is correct. If the example measure from section 3.3 exists in the model, this simple [DAX query](https://learn.microsoft.com/en-us/dax/dax-queries) returns its value:
+Check the grand total, a filtered month or region, and a year with no prior-year data against independently known values. A syntactically valid query does not prove that a KPI is correct. If the example measure from section 9.3 exists in the model, this simple [DAX query](https://learn.microsoft.com/en-us/dax/dax-queries) returns its value:
 
 ```dax
 EVALUATE
@@ -167,23 +167,23 @@ The query evaluates a measure; it does not create one. For creating and persisti
 
 **Exercise 2 — controlled TMDL bulk change.** Ask the agent to list candidate technical key columns and missing descriptions without changing anything. Review exceptions: an `ID`, `Key`, or `_SK` suffix alone does not prove that a column should be hidden. After approval, make the limited changes, preserve source columns and security rules, and inspect the resulting diff. Use transactions where the selected tool supports them.
 
-## 3.7 Design and Validate a PBIR Report
+## 9.7 Design and Validate a PBIR Report
 
 **Exercise 3 — a management overview.** First produce a design brief for the audience and business questions. Then, using only existing model fields and measures, create or modify a PBIR page with appropriate KPI cards, a time trend, a product comparison, and relevant filters. List missing model objects rather than inventing them. Agree on layout, theme, accessibility, and a maximum number of visuals before authoring.
 
-Validate the supported PBIR files against their schemas, then render the page in Power BI Desktop. An approved Report skill and Desktop Bridge can assist with file validation, reload, and screenshots; otherwise perform those steps manually. Structural validation is not a visual or business review. Use the checks in section 3.9 before accepting the page.
+Validate the supported PBIR files against their schemas, then render the page in Power BI Desktop. An approved Report skill and Desktop Bridge can assist with file validation, reload, and screenshots; otherwise perform those steps manually. Structural validation is not a visual or business review. Use the checks in section 9.9 before accepting the page.
 
 **Synchronize Desktop and external edits:** follow [Edit PBIP files outside Power BI Desktop](https://learn.microsoft.com/en-us/power-bi/developer/projects/projects-external-editing). Save Desktop changes first, edit supported files, save them in VS Code, then use **Apply external changes** when the preview feature is enabled. If it is unavailable, follow the applicable guidance for reopening the project. Applying external changes can overwrite unsaved Desktop work and reset filters or UI state. Resolve pending Power Query changes before editing model expressions, and keep project file paths within the documented Windows limit. The guide lists files such as `definition.pbir`, `report.json`, `mobileState.json`, and `semanticModelDiagramLayout.json` as unsupported for external editing in this preview. Check the exact file path and current guidance: PBIR's `definition/report.json` is distinct from the PBIR-Legacy root `report.json`.
 
-## 3.8 Query a Published Model (Optional)
+## 9.8 Query a Published Model (Optional)
 
-**Exercise 4 — a read-only data question.** With approved MCP access, follow the Fabric IQ MCP setup linked in section 3.4, sign in with a test identity, and select a published report or semantic model the identity can access. Ask for the ten best-selling products in the last complete quarter. Have the agent show the DAX and filter logic, run the query, and compare the results with a trusted report or known test values.
+**Exercise 4 — a read-only data question.** With approved MCP access, follow the Fabric IQ MCP setup linked in section 9.4, sign in with a test identity, and select a published report or semantic model the identity can access. Ask for the ten best-selling products in the last complete quarter. Have the agent show the DAX and filter logic, run the query, and compare the results with a trusted report or known test values.
 
 The Fabric IQ MCP guide specifies region, account, client, and access prerequisites and demonstrates setup with GitHub Copilot CLI; other compatible clients require their own configuration. It respects the signed-in user's existing access. Without MCP, generate or write the query and run it manually in DAX Query View. Do not claim a query was executed unless the result is available.
 
 The [earlier Power BI Consumption MCP endpoint](https://learn.microsoft.com/en-us/power-bi/developer/mcp/remote-mcp-server-get-started) remains documented for existing integrations, but Microsoft recommends Fabric IQ MCP for consumption. Its authentication and permission requirements differ; do not assume configuration or security behavior is identical.
 
-## 3.9 Quality, Security, and Governance
+## 9.9 Quality, Security, and Governance
 
 Before approving a change, record evidence for:
 
@@ -195,7 +195,7 @@ Before approving a change, record evidence for:
 
 For example, the older Consumption MCP documentation states that user-authenticated queries enforce RLS but service-principal authentication does not support RLS in that endpoint. Apply the documentation and test the actual identity for the selected integration rather than generalizing this behavior to every MCP server.
 
-## 3.10 Review and Deploy Changes
+## 9.10 Review and Deploy Changes
 
 1. Review the Git diff, remove unintended changes, and create a pull request describing the business goal, affected objects, DAX test results, screenshots, limitations, and rollback.
 2. Run the agreed checks and obtain technical and business approval. Deploy first to a dedicated development or test workspace.
@@ -205,7 +205,7 @@ Local Git tracks the project files. [Fabric Git integration](https://learn.micro
 
 - ⭐ **Deploy a Power BI project with fabric-cicd** — [Deploy Power BI projects using fabric-cicd](https://learn.microsoft.com/en-us/power-bi/developer/projects/projects-deploy-fabric-cicd) — **Hands-on quickstart:** install the documented Python library, prepare a PBIP project, create the guide's deployment script, and deploy to a Fabric workspace. Requires a supported Python version, a PBIP project, and Contributor access; automation has additional identity and repository prerequisites. Configure data-source credentials as required and use a test workspace. Review deployment and cleanup settings before running automation.
 
-## 3.11 Optional: Notebook Authoring and Embedded Analytics
+## 9.11 Optional: Notebook Authoring and Embedded Analytics
 
 - **Fabric notebooks in VS Code** — [Create and manage Fabric notebooks in VS Code](https://learn.microsoft.com/en-us/fabric/data-engineering/author-notebook-with-vs-code) — **Practical how-to:** use the Fabric Data Engineering extension to create, edit, synchronize, and run notebooks from VS Code.
 

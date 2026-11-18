@@ -10,19 +10,19 @@
 
 2. [**Copilot in Fabric: Data Transformation, Spark, and SQL**](./02_Copilot_in_Fabric_Data_Transformation_Spark_and_SQL.md)
 
-3. [**Vibe Coding with Power BI and Visual Studio Code**](./03_Vibe_Coding_with_Power_BI_and_Visual_Studio_Code.md)
+3. [**GenAI-based Report-Commenting**](./03_GenAI_based_Report_Commenting.md)
 
-4. [**GenAI-based Report-Commenting**](./04_GenAI_based_Report_Commenting.md)
+4. [**Fabric AI Functions and Azure OpenAI**](./04_Fabric_AI_Functions_and_Azure_OpenAI.md)
 
-5. [**Fabric AI Functions and Azure OpenAI**](./05_Fabric_AI_Functions_and_Azure_OpenAI.md)
+5. [**Fabric IQ and Ontology**](./05_Fabric_IQ_and_Ontology.md)
 
-6. [**Fabric IQ and Ontology**](./06_Fabric_IQ_and_Ontology.md)
+6. [**Fabric Data Agents**](./06_Fabric_Data_Agents.md)
 
-7. [**Fabric Data Agents**](./07_Fabric_Data_Agents.md)
+7. [**Fabric Operations Agents**](./07_Fabric_Operations_Agents.md)
 
-8. [**Fabric Operations Agents**](./08_Fabric_Operations_Agents.md)
+8. [**Semantic Link and Semantic Model Analysis**](./08_Semantic_Link_and_Semantic_Model_Analysis.md)
 
-9. [**Semantic Link and Semantic Model Analysis**](./09_Semantic_Link_and_Semantic_Model_Analysis.md)
+9. [**Vibe Coding with Power BI and Visual Studio Code**](./09_Vibe_Coding_with_Power_BI_and_Visual_Studio_Code.md)
 
 10. [**Fabric Apps with Rayfin**](./10_Fabric_Apps_with_Rayfin.md)
 
